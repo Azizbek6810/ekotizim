@@ -1,0 +1,49 @@
+.dropdown-menu {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+/* .delivery-locations{
+    height: 350px;
+    overflow-y: auto;
+} */
+
+.main-img {
+    width: 372px;
+}
+
+.thumbnail-images img {
+    width: 23%;
+    cursor: pointer;
+    border: 2px solid var(--gray-200);
+}
+
+.thumbnail-images img.active,
+.thumbnail-images img:hover {
+    border-color: var(--blue-400);
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--gray-300);
+    border-radius: 50%;
+}
+
+.product-info-tabs .nav-item .nav-link {
+    background-color: transparent;
+    border: none;
+    background: var(--white);
+    border-radius: none;
+    color: var(--gray-600);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.product-info-tabs .nav-item .nav-link.active {
+    background-color: transparent;
+    border-bottom: 2px solid var(--blue-700);
+    color: var(--blue-700);
+    background: var(--white);
+}

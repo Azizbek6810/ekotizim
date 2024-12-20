@@ -30,21 +30,12 @@
 
 /* So'ngi maxsulotlar section styles */
 
-.icon-star {
-    font-size: 18px;
-    border-radius: 50%;
-    background-color: var(--white);
-    color: var(--gray-400);
-    border: 1px solid var(--gray-200);
-    padding: 8px;
-    cursor: pointer;
+#latest-products .icon-star {
     top: 10px;
     right: 10px;
 }
 
-.icon-star.liked {
-    color: var(--orange);
-}
-
-
+.product-img img{
+    max-width: 250px;
+  }
 

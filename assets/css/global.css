@@ -156,6 +156,23 @@ input[type="number"] {
     margin: 16px auto;
 }
 
+/* STAR ICON */
+
+.icon-star {
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--gray-400);
+    border: 1px solid var(--gray-200);
+    padding: 9px;
+    cursor: pointer;
+}
+
+.icon-star.liked {
+    color: var(--orange);
+}
+
 /* Header style */
 
 .header_upper {

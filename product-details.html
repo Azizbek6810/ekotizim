@@ -105,55 +105,359 @@
                     <li class="breadcrumb-item active text-black" aria-current="page">Milliy do'kon</li>
                 </ol>
             </nav>
-            <h2 class="section-title mb-4 fw-bold fs-2">Mahsulot sahifasi</h2>
-            <div class="row">
+            <h2 class="section-title mb-5 fw-bold fs-2">Mahsulot sahifasi</h2>
+            <div class="row mb-4">
+                <!-- Column 1 -->
                 <div class="product-images col-6">
-                    <img src="./assets/images/product-img-2.png" alt="Main Product Image">
-                    <div class="thumbnail-images d-flex justify-content-between">
-                        <img src="./assets/images/product-img-2.png" alt="Thumbnail image 1">
-                        <img src="./assets/images/product-img-2.png" alt="Thumbnail image 2">
-                        <img src="./assets/images/product-img-2.png" alt="Thumbnail image 3">
-                        <img src="./assets/images/product-img-2.png" alt="Thumbnail image 4">
+                    <div class="border rounded-4 text-center p-4 mb-3">
+                        <img class="main-img custom-transition" src="./assets/images/bag.png" alt="Main Product Image">
+                    </div>
+                    <div class="thumbnail-images d-flex align-items-center justify-content-between">
+                        <img class="p-2 rounded-3 custom-transition active" src="./assets/images/product-img-2.png"
+                            alt="Thumbnail image 1">
+                        <img class="p-2 rounded-3 custom-transition" src="./assets/images/product-img-2.png"
+                            alt="Thumbnail image 2">
+                        <img class="p-2 rounded-3 custom-transition" src="./assets/images/product-img-2.png"
+                            alt="Thumbnail image 3">
+                        <img class="p-2 rounded-3 custom-transition" src="./assets/images/product-img-2.png"
+                            alt="Thumbnail image 4">
                     </div>
                 </div>
-                <div class="product-infos col-6">
+                <!-- Column 2 -->
+                <div class="product-infos col-6 d-flex flex-column gap-3">
                     <div class="d-flex justify-content-between">
-                        <span>Mahsulot №SO15445930</span>
-                        <i class="icon-star text-muted"></i>
+                        <span class="border border-primary py-2 px-3 rounded-4 text-primary fw-normal bg-blue-100">
+                            Mahsulot №: SO15445930
+                        </span>
+                        <i class="icon-star liked"></i>
                         <!-- <span>&#9733;</span> -->
                     </div>
-                    <p class="text-decoration-underline">27.51.13.110-00001</p>
+                    <p class="text-decoration-underline fs-5">27.51.13.110-00001</p>
                     <h3 class="fw-semibold">Машины стиральные бытовые</h3>
-                    <div class="d-flex align-items-center mt-2">
-                        <i class="icon-star"></i>
-                        <div class="d-flex gap-1">
-                            <b>4.5</b>
+                    <div class="d-flex align-items-center mt-2 gap-2">
+                        <i class="icon-star liked"></i>
+                        <div class="d-flex gap-2 align-items-center">
+                            <b class="fs-5">4.5</b>
                             <div class="dot"></div>
-                            <span class="text-decoration-underline">14 ta izoh</span>
+                            <span class="text-decoration-underline text-muted fs-5">14 ta izoh</span>
                         </div>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
-                        <span>Birlik uchun narx:</span>
-                        <span><strong>161 000 000 so'm</strong></span>
+                        <span class="fs-5 text-muted">Birlik uchun narx:</span>
+                        <strong class="fs-4">161 000 000 so'm</strong>
                     </div>
-                    <div class="box mt-3">
+                    <div class="box mt-3 border rounded-4 bg-light p-3 d-flex flex-column gap-2">
                         <div class="d-flex justify-content-between">
                             <span class="text-muted">Status:</span>
-                            <span class="text-primary">E'lon qilingan</span>
+                            <span
+                                class="text-primary border border-primary py-1 px-2 rounded-4 fw-normal bg-blue-100">E'lon
+                                qilingan</span>
+                        </div>
+                        <div class="d-flex justify-content-between gap-5">
+                            <span class="text-muted">Kategoriya:</span>
+                            <span class="text-black fw-semibold w-50 text-end">
+                                Продукты программные и услуги по разработ...
+                                <i class="icon-help-circle text-primary"></i>
+                            </span>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <span class="text-muted">Kategoriya:</span>
-                            <span class="text-black">
-                                Продукты программные и услуги по разработ... 
-                                <i class="icon-help-circle"></i>
-                            </span>
+                            <span class="text-muted">Soni:</span>
+                            <span class="text-black fw-semibold w-50 text-end">5 dona</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Min/maks to'plam:</span>
+                            <span class="text-black fw-semibold w-50 text-end">51 - 5 dona</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Yetkazib berish muddati:</span>
+                            <span class="text-black fw-semibold w-50 text-end">3 kun</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Boshlanish sanasi:</span>
+                            <span class="text-black fw-semibold w-50 text-end">17.12.2024 21:28</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Tugash sanasi:</span>
+                            <span class="text-black fw-semibold w-50 text-end">05.01.2025 21:28</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <!-- TABS -->
+            <ul class="product-info-tabs nav nav-tabs gap-2 d-flex justify-content-around" id="myTab" role="tablist">
+                <!-- TAVSIF TAB BUTTON -->
+                <li class="nav-item w-25" role="presentation">
+                    <button class="nav-link w-100 active" id="description-tab" data-bs-toggle="tab"
+                        data-bs-target="#description-tab-pane" type="button" role="tab"
+                        aria-controls="description-tab-pane" aria-selected="true">Tavsif</button>
+                </li>
+                <!-- TOVARNING XUSUSIYATLARI TAB BUTTON -->
+                <li class="nav-item w-25" role="presentation">
+                    <button class="nav-link w-100" id="product-features-tab" data-bs-toggle="tab"
+                        data-bs-target="#product-features-tab-pane" type="button" role="tab"
+                        aria-controls="product-features-tab-pane" aria-selected="false">
+                        Tovarning xususiyatlari
+                    </button>
+                </li>
+                <!-- IZOHLAR VA FIKRLAR TAB BUTTON -->
+                <li class="nav-item w-25" role="presentation">
+                    <button class="nav-link w-100" id="comments-tab" data-bs-toggle="tab"
+                        data-bs-target="#comments-tab-pane" type="button" role="tab" aria-controls="comments-tab-pane"
+                        aria-selected="false">
+                        Izohlar va fikrlar
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <!-- TAVSIF TAB -->
+                <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel"
+                    aria-labelledby="description-tab" tabindex="0">
+                    <div class="row justify-content-between mt-4 align-items-start">
+                        <div class="col-6">
+                            <!-- row 1 -->
+                            <div class="mb-4 d-flex flex-column gap-3">
+                                <h3>Tavsif</h3>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted">Tovar markasi:</span>
+                                    <b class="w-50 text-end">Стиральная машина Artel 8 кг</b>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted">Ishlab chiqaruvchi:</span>
+                                    <b class="w-50 text-end">O00 ARTEL MANUFACTURING ELECTRONICS</b>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted">Ishlab chiqaruvchi mamlakat:</span>
+                                    <b class="w-50 text-end">УЗБЕКИСТАН</b>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted">Litsenziyaga egaligi:</span>
+                                    <b class="w-50 text-end">Bor</b>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted">Mahalliy ishlab chiqaruvchi:</span>
+                                    <b class="w-50 text-end">Ha</b>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted">Yaroqlilik muddati:</span>
+                                    <b class="w-50 text-end">1 Год</b>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted">Kafolat muddati:</span>
+                                    <b class="w-50 text-end">1 Год</b>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted">Tovar ishlab chiqarilgan yil:</span>
+                                    <b class="w-50 text-end">31.01.2024</b>
+                                </div>
+                            </div>
+                            <!-- row 2 -->
+                            <div class="border rounded-4 bg-light p-3 mb-4">
+                                <h4 class="mb-3">Texnik parametrlar</h4>
+                                <p class="text-muted">
+                                    ПРЕИМУЩЕСТВА Высокая энергоэффективность А Автоматическая балансировка барабана ✓
+                                    Широкий загрузочный люк ✓ Низкий уровень шума ✓ Антибактериальное покрытие барабана
+                                    ✓ AddWash – функция дозагрузки белья (доступна во всех режимах, кроме «Шерсть» и
+                                    «Пуховые вещи») ✓ ОБЩИЕ ХАРАКТЕРИСТИКИ Максимальный объем загрузки при стирке (сухое
+                                    белье), кг (не более) 8,0 Максимальная частота вращения барабана при отжиме в минуту
+                                    1200,0 Уровень шума при с
+                                </p>
+                            </div>
+                            <!-- row 3 -->
+                            <div class="border rounded-4 bg-light p-3">
+                                <h4 class="mb-3">Sertifikat</h4>
+                                <p class="text-secondary mb-3">Fayl nomi</p>
+                                <div class="file-box d-flex gap-2 bg-body p-2 border rounded-3 mb-3">
+                                    <img src="./assets/images/file-type.svg" alt="file image">
+                                    <div class="d-flex flex-column">
+                                        <span class="">Tech design requirements.pdf</span>
+                                        <span class="text-muted">200 KB</span>
+                                    </div>
+                                </div>
+                                <div class="file-box d-flex gap-2 bg-body p-2 border rounded-3">
+                                    <img src="./assets/images/file-type.svg" alt="file image">
+                                    <div class="d-flex flex-column">
+                                        <span class="">Tech design requirements.pdf</span>
+                                        <span class="text-muted">200 KB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 border rounded-4 bg-light p-3 h-100">
+                            <div class="d-flex gap-2 align-items-center mb-3">
+                                <i class="icon-location text-primary fs-5"></i>
+                                <b class="text-blue-900">
+                                    Yetkazib berish hududlari va tumanlari:
+                                </b>
+                            </div>
+                            <div class="d-flex gap-2 flex-column">
+                                <!-- Regions dropdown 1 -->
+                                <div class="dropdown">
+                                    <button
+                                        class="btn border bg-body dropdown-toggle form-control text-start d-flex align-items-center justify-content-between fw-semibold text-blue-900"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Andijon viloyati
+                                    </button>
+                                    <ul class="dropdown-menu form-control">
+                                        <li><a class="dropdown-item" href="#">Asaka</a></li>
+                                        <li><a class="dropdown-item" href="#">Buloqboshi</a></li>
+                                        <li><a class="dropdown-item" href="#">Paxtaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Marhamat</a></li>
+                                        <li><a class="dropdown-item" href="#">Shahrixon</a></li>
+                                        <li><a class="dropdown-item" href="#">Xo'jaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Oltinko'l</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Regions dropdown 2 -->
+                                <div class="dropdown">
+                                    <button
+                                        class="btn border bg-body dropdown-toggle form-control text-start d-flex align-items-center justify-content-between fw-semibold text-blue-900"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Buxoro viloyati
+                                    </button>
+                                    <ul class="dropdown-menu form-control">
+                                        <li><a class="dropdown-item" href="#">Asaka</a></li>
+                                        <li><a class="dropdown-item" href="#">Buloqboshi</a></li>
+                                        <li><a class="dropdown-item" href="#">Paxtaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Marhamat</a></li>
+                                        <li><a class="dropdown-item" href="#">Shahrixon</a></li>
+                                        <li><a class="dropdown-item" href="#">Xo'jaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Oltinko'l</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Regions dropdown 3 -->
+                                <div class="dropdown">
+                                    <button
+                                        class="btn border bg-body dropdown-toggle form-control text-start d-flex align-items-center justify-content-between fw-semibold text-blue-900"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Namangan viloyati
+                                    </button>
+                                    <ul class="dropdown-menu form-control">
+                                        <li><a class="dropdown-item" href="#">Asaka</a></li>
+                                        <li><a class="dropdown-item" href="#">Buloqboshi</a></li>
+                                        <li><a class="dropdown-item" href="#">Paxtaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Marhamat</a></li>
+                                        <li><a class="dropdown-item" href="#">Shahrixon</a></li>
+                                        <li><a class="dropdown-item" href="#">Xo'jaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Oltinko'l</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Regions dropdown 4 -->
+                                <div class="dropdown">
+                                    <button
+                                        class="btn border bg-body dropdown-toggle form-control text-start d-flex align-items-center justify-content-between fw-semibold text-blue-900"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Toshkent viloyati
+                                    </button>
+                                    <ul class="dropdown-menu form-control">
+                                        <li><a class="dropdown-item" href="#">Asaka</a></li>
+                                        <li><a class="dropdown-item" href="#">Buloqboshi</a></li>
+                                        <li><a class="dropdown-item" href="#">Paxtaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Marhamat</a></li>
+                                        <li><a class="dropdown-item" href="#">Shahrixon</a></li>
+                                        <li><a class="dropdown-item" href="#">Xo'jaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Oltinko'l</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Regions dropdown 5 -->
+                                <div class="dropdown">
+                                    <button
+                                        class="btn border bg-body dropdown-toggle form-control text-start d-flex align-items-center justify-content-between fw-semibold text-blue-900"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Navoiy viloyati
+                                    </button>
+                                    <ul class="dropdown-menu form-control">
+                                        <li><a class="dropdown-item" href="#">Asaka</a></li>
+                                        <li><a class="dropdown-item" href="#">Buloqboshi</a></li>
+                                        <li><a class="dropdown-item" href="#">Paxtaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Marhamat</a></li>
+                                        <li><a class="dropdown-item" href="#">Shahrixon</a></li>
+                                        <li><a class="dropdown-item" href="#">Xo'jaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Oltinko'l</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Regions dropdown 6 -->
+                                <div class="dropdown">
+                                    <button
+                                        class="btn border bg-body dropdown-toggle form-control text-start d-flex align-items-center justify-content-between fw-semibold text-blue-900"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Qashqadaryo viloyati
+                                    </button>
+                                    <ul class="dropdown-menu form-control">
+                                        <li><a class="dropdown-item" href="#">Asaka</a></li>
+                                        <li><a class="dropdown-item" href="#">Buloqboshi</a></li>
+                                        <li><a class="dropdown-item" href="#">Paxtaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Marhamat</a></li>
+                                        <li><a class="dropdown-item" href="#">Shahrixon</a></li>
+                                        <li><a class="dropdown-item" href="#">Xo'jaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Oltinko'l</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Regions dropdown 7 -->
+                                <div class="dropdown">
+                                    <button
+                                        class="btn border bg-body dropdown-toggle form-control text-start d-flex align-items-center justify-content-between fw-semibold text-blue-900"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Surxondaryo viloyati
+                                    </button>
+                                    <ul class="dropdown-menu form-control">
+                                        <li><a class="dropdown-item" href="#">Asaka</a></li>
+                                        <li><a class="dropdown-item" href="#">Buloqboshi</a></li>
+                                        <li><a class="dropdown-item" href="#">Paxtaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Marhamat</a></li>
+                                        <li><a class="dropdown-item" href="#">Shahrixon</a></li>
+                                        <li><a class="dropdown-item" href="#">Xo'jaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Oltinko'l</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Regions dropdown 8 -->
+                                <div class="dropdown">
+                                    <button
+                                        class="btn border bg-body dropdown-toggle form-control text-start d-flex align-items-center justify-content-between fw-semibold text-blue-900"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Farg'ona viloyati
+                                    </button>
+                                    <ul class="dropdown-menu form-control">
+                                        <li><a class="dropdown-item" href="#">Asaka</a></li>
+                                        <li><a class="dropdown-item" href="#">Buloqboshi</a></li>
+                                        <li><a class="dropdown-item" href="#">Paxtaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Marhamat</a></li>
+                                        <li><a class="dropdown-item" href="#">Shahrixon</a></li>
+                                        <li><a class="dropdown-item" href="#">Xo'jaobod</a></li>
+                                        <li><a class="dropdown-item" href="#">Oltinko'l</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+                <!-- IZOHLAR VA FIKRLAR TAB -->
+                <div class="tab-pane fade" id="product-features-tab-pane" role="tabpanel"
+                    aria-labelledby="product-features-tab" tabindex="0">
+                    <div class="border rounded-4 bg-light p-3 mt-4">
+                        <h4 class="mb-3">Texnik xususiyatlari</h4>
+                        <p class="text-muted">
+                            ПРЕИМУЩЕСТВА Высокая энергоэффективность А Автоматическая балансировка барабана ✓ Широкий
+                            загрузочный люк ✓ Низкий уровень шума ✓ Антибактериальное покрытие барабана ✓ AddWash –
+                            функция дозагрузки белья (доступна во всех режимах, кроме «Шерсть» и «Пуховые вещи») ✓ ОБЩИЕ
+                            ХАРАКТЕРИСТИКИ Максимальный объем загрузки при стирке (сухое белье), кг (не более) 8,0
+                            Максимальная частота вращения барабана при отжиме в минуту 1200,0 Уровень шума при с
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TOVARNING XUSUSIYATLARI TAB -->
+                <div class="tab-pane fade" id="comments-tab-pane" role="tabpanel" aria-labelledby="comments-tab"
+                    tabindex="0">
+                    <div class="form-floating mt-4">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 150px"></textarea>
+                        <label for="floatingTextarea2">Fikr va izohlaringizni qoldiring...</label>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-blue-900 pt-5 pb-4 position-relative text-white lh-lg">
