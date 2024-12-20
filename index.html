@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ekotizim</title>
+
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <!-- GLOBAL CSS LINK -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+
+    <!-- HOME CSS LINK -->
+    <link rel="stylesheet" href="./assets/css/home.css" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <!-- Upper Part -->
+        <div class="header_upper container py-2 d-flex justify-content-between align-items-center">
+            <a class="logo" href="index.html">
+                <img src="./assets/images/logo.svg" alt="logo" />
+            </a>
+            <div class="d-flex align-items-center gap-3">
+                <div class="phone_number d-flex align-items-center gap-2">
+                    <i class="icon-phone rounded-circle bg-info text-white p-2 fs-3"></i>
+                    <div class="d-flex flex-column">
+                        <a href="tel:+998 71 207 00 33" class="fs-5 fw-semibold lh-sm text-black">+998 71 207 00 33</a>
+                        <span class="fs-6 text-secondary">24/7 Qanday yordam kerak?</span>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn border border-light-subtle dropdown-toggle d-flex align-items-center gap-2"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./assets/images/uz-flag.svg" alt="language" />
+                        UZ
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                <img src="./assets/images/uz-flag.svg" alt="language" />
+                                UZ
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                <img src="./assets/images/ru-flag.svg" alt="language" />
+                                RU
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                <img src="./assets/images/en-flag.svg" alt="language" />
+                                EN
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn-outline-success">Ro'yxatdan o'tish</button>
+                <button class="btn btn-primary">
+                    <i class="icon-user"></i>
+                    <span>Kirish</span>
+                </button>
+            </div>
+        </div>
+        <!-- Lower Part -->
+        <nav class="header_lower">
+            <div class="container">
+                <ul class="nav gap-4">
+                    <li class="nav-item">
+                        <a href="#" class="active nav-link py-3 px-4 fs-5 fw-medium lh-sm custom-transition">KIRISH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-3 px-4 fs-5 fw-medium lh-sm custom-transition">SAVDOLAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-3 px-4 fs-5 fw-medium lh-sm custom-transition">TOVAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-3 px-4 fs-5 fw-medium lh-sm custom-transition">TIZIMDAGI
+                            YANGILIKLAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-3 px-4 fs-5 fw-medium lh-sm custom-transition">BOG'LANISH
+                            UCHUN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main class="container py-5">
+        <!-- Carousel section -->
+        <section id="carousel-section" class="mb-5">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner rounded-4">
+                    <!-- Item 1 -->
+                    <div class="carousel-item active bg-blue-900 text-white rounded-4">
+                        <div class="d-flex justify-content-between align-items-center mx-auto w-75">
+                            <div class="carousel-text w-50">
+                                <h2 class="fs-2 fw-semibold">
+                                    Ekotizim.uzex.uz tadbirkorlar va buyurtmachilar o'rtasida
+                                    ishonchli hamkor
+                                </h2>
+                            </div>
+                            <img src="./assets/images/bag.png" class="img-fluid carousel-image" alt="Slide 1 Image" />
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="carousel-item bg-blue-900 text-white rounded-4">
+                        <div class="d-flex justify-content-between align-items-center mx-auto w-75">
+                            <div class="carousel-text w-50">
+                                <h2 class="fs-2 fw-semibold">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Blanditiis nisi repudiandae saepe quidem dolorum porro?
+                                </h2>
+                            </div>
+                            <img src="./assets/images/bag.png" class="img-fluid carousel-image" alt="Slide 2 Image" />
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="carousel-item bg-blue-900 text-white rounded-4">
+                        <div class="d-flex justify-content-between align-items-center mx-auto w-75">
+                            <div class="carousel-text w-50">
+                                <h2 class="fs-2 fw-semibold">Welcome to Our Website</h2>
+                            </div>
+                            <img src="./assets/images/bag.png" class="img-fluid carousel-image" alt="Slide 3 Image" />
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="carousel-item bg-blue-900 text-white rounded-4">
+                        <div class="d-flex justify-content-between align-items-center mx-auto w-75">
+                            <div class="carousel-text w-50">
+                                <h2 class="fs-2 fw-semibold">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Maxime, explicabo.
+                                </h2>
+                            </div>
+                            <img src="./assets/images/bag.png" class="img-fluid carousel-image" alt="Slide 3 Image" />
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="carousel-item bg-blue-900 text-white rounded-4">
+                        <div class="d-flex justify-content-between align-items-center mx-auto w-75">
+                            <div class="carousel-text w-50">
+                                <h2 class="fs-2 fw-semibold">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                </h2>
+                            </div>
+                            <img src="./assets/images/bag.png" class="img-fluid carousel-image" alt="Slide 3 Image" />
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Umumiy ko'rsatkichlar section -->
+        <section id="general-indicators" class="mb-5">
+            <h2 class="section-title text-center mb-4 fw-bold fs-2">Umumiy ko'rsatgichlar</h2>
+            <div class="row g-3">
+                <!-- box-1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="hover-shadow position-relative p-4 border rounded-4">
+                        <img src="./assets/images/bg-shape.svg" class="indicator-bg position-absolute top-0 end-0"
+                            alt="background shape" />
+                        <i class="icon-box fs-4 text-white bg-blue-900 p-2 rounded-circle"></i>
+                        <h4 class="mt-4 mb-2 fs-6 fw-semibold text-secondary-emphasis">Jami xaridlar</h4>
+                        <p class="fs-4 fw-semibold">168.2 <small class="fs-6 fw-normal text-secondary">trln.
+                                so'm</small></p>
+                    </div>
+                </div>
+
+                <!-- box-2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="hover-shadow position-relative p-4 border rounded-4">
+                        <img src="./assets/images/bg-shape.svg" class="indicator-bg position-absolute top-0 end-0"
+                            alt="background shape" />
+                        <i class="icon-shopping-cart fs-4 text-white bg-blue-900 p-2 rounded-circle"></i>
+                        <h4 class="mt-4 mb-2 fs-6 fw-semibold text-secondary-emphasis">Tovarlar xaridi</h4>
+                        <p class="fs-4 fw-semibold">168.2 <small class="fs-6 fw-normal text-secondary">trln.
+                                so'm</small></p>
+                    </div>
+                </div>
+
+                <!-- box-3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="hover-shadow position-relative p-4 border rounded-4">
+                        <img src="./assets/images/bg-shape.svg" class="indicator-bg position-absolute top-0 end-0"
+                            alt="background shape" />
+                        <i class="icon-invoice fs-4 text-white bg-blue-900 p-2 rounded-circle"></i>
+                        <h4 class="mt-4 mb-2 fs-6 fw-semibold text-secondary-emphasis">Buyurtmachilar soni</h4>
+                        <p class="fs-4 fw-semibold">168.2 <small class="fs-6 fw-normal text-secondary">trln.
+                                so'm</small></p>
+                    </div>
+                </div>
+
+                <!-- box-4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="hover-shadow position-relative p-4 border rounded-4">
+                        <img src="./assets/images/bg-shape.svg" class="indicator-bg position-absolute top-0 end-0"
+                            alt="background shape" />
+                        <i class="icon-user-group fs-4 text-white bg-blue-900 p-2 rounded-circle"></i>
+                        <h4 class="mt-4 mb-2 fs-6 fw-semibold text-secondary-emphasis">Tadbirkorlar soni</h4>
+                        <p class="fs-4 fw-semibold">168.2 <small class="fs-6 fw-normal text-secondary">trln.
+                                so'm</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sohalar kesimida davlat xaridlari section -->
+        <section id="industy-category-section" class="mb-5">
+            <h2 class="section-title text-center mb-4 fw-bold fs-2">Sohalar kesimida davlat xaridlari</h2>
+            <div class="row g-4">
+
+                <!-- category box 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-box border rounded-4 custom-transition hover-shadow">
+                        <!-- category box header -->
+                        <h4 class="text-center text-white py-3 fs-5">Qishloq xo'jaligi</h4>
+                        <!-- category box body -->
+                        <div class="category-body border-bottom p-2">
+                            <!-- Qator:1 savdo ulushi -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-piece me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo ulushi</h5>
+                                </div>
+                                <span
+                                    class="sale-percentage fs-5 border border-2 rounded-5 px-2 border-primary text-blue-900">57%</span>
+                            </div>
+                            <!-- Qator:2 savdo hajmi -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo hajmi</h5>
+                                </div>
+                                <span class="text-black fw-semibold fs-5">5 000 000 so'm</span>
+                            </div>
+                        </div>
+                        <!-- category footer -->
+                        <div class="category-footer p-2">
+                            <div class="row g-2 text-center">
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- category box 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-box border rounded-4 custom-transition hover-shadow">
+                        <!-- category box header -->
+                        <h4 class="text-center text-white py-3 fs-5">Metallurgiya va kimyo</h4>
+                        <!-- category box body -->
+                        <div class="category-body border-bottom p-2">
+                            <!-- Qator:1 savdo ulushi -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-piece me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo ulushi</h5>
+                                </div>
+                                <span
+                                    class="sale-percentage fs-5 border border-2 rounded-5 px-2 border-primary text-blue-900">57%</span>
+                            </div>
+                            <!-- Qator:2 savdo hajmi -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo hajmi</h5>
+                                </div>
+                                <span class="text-black fw-semibold fs-5">5 000 000 so'm</span>
+                            </div>
+                        </div>
+                        <!-- category footer -->
+                        <div class="category-footer p-2">
+                            <div class="row g-2 text-center">
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- category box 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-box border rounded-4 custom-transition hover-shadow">
+                        <!-- category box header -->
+                        <h4 class="text-center text-white py-3 fs-5">Yengil sanoat va iste'mol</h4>
+                        <!-- category box body -->
+                        <div class="category-body border-bottom p-2">
+                            <!-- Qator:1 savdo ulushi -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-piece me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo ulushi</h5>
+                                </div>
+                                <span
+                                    class="sale-percentage fs-5 border border-2 rounded-5 px-2 border-primary text-blue-900">57%</span>
+                            </div>
+                            <!-- Qator:2 savdo hajmi -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo hajmi</h5>
+                                </div>
+                                <span class="text-black fw-semibold fs-5">5 000 000 so'm</span>
+                            </div>
+                        </div>
+                        <!-- category footer -->
+                        <div class="category-footer p-2">
+                            <div class="row g-2 text-center">
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- category box 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-box border rounded-4 custom-transition hover-shadow">
+                        <!-- category box header -->
+                        <h4 class="text-center text-white py-3 fs-5">Texnologiya va elektronika</h4>
+                        <!-- category box body -->
+                        <div class="category-body border-bottom p-2">
+                            <!-- Qator:1 savdo ulushi -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-piece me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo ulushi</h5>
+                                </div>
+                                <span
+                                    class="sale-percentage fs-5 border border-2 rounded-5 px-2 border-primary text-blue-900">57%</span>
+                            </div>
+                            <!-- Qator:2 savdo hajmi -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo hajmi</h5>
+                                </div>
+                                <span class="text-black fw-semibold fs-5">5 000 000 so'm</span>
+                            </div>
+                        </div>
+                        <!-- category footer -->
+                        <div class="category-footer p-2">
+                            <div class="row g-2 text-center">
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- category box 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-box border rounded-4 custom-transition hover-shadow">
+                        <!-- category box header -->
+                        <h4 class="text-center text-white py-3 fs-5">Xizmatlar va transport</h4>
+                        <!-- category box body -->
+                        <div class="category-body border-bottom p-2">
+                            <!-- Qator:1 savdo ulushi -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-piece me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo ulushi</h5>
+                                </div>
+                                <span
+                                    class="sale-percentage fs-5 border border-2 rounded-5 px-2 border-primary text-blue-900">57%</span>
+                            </div>
+                            <!-- Qator:2 savdo hajmi -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo hajmi</h5>
+                                </div>
+                                <span class="text-black fw-semibold fs-5">5 000 000 so'm</span>
+                            </div>
+                        </div>
+                        <!-- category footer -->
+                        <div class="category-footer p-2">
+                            <div class="row g-2 text-center">
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- category box 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-box border rounded-4 custom-transition hover-shadow">
+                        <!-- category box header -->
+                        <h4 class="text-center text-white py-3 fs-5">Moliyaviy va huquqiy xizmat</h4>
+                        <!-- category box body -->
+                        <div class="category-body border-bottom p-2">
+                            <!-- Qator:1 savdo ulushi -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-piece me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo ulushi</h5>
+                                </div>
+                                <span
+                                    class="sale-percentage fs-5 border border-2 rounded-5 px-2 border-primary text-blue-900">57%</span>
+                            </div>
+                            <!-- Qator:2 savdo hajmi -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo hajmi</h5>
+                                </div>
+                                <span class="text-black fw-semibold fs-5">5 000 000 so'm</span>
+                            </div>
+                        </div>
+                        <!-- category footer -->
+                        <div class="category-footer p-2">
+                            <div class="row g-2 text-center">
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- category box 7 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-box border rounded-4 custom-transition hover-shadow">
+                        <!-- category box header -->
+                        <h4 class="text-center text-white py-3 fs-5">Qurilish va inshootlar</h4>
+                        <!-- category box body -->
+                        <div class="category-body border-bottom p-2">
+                            <!-- Qator:1 savdo ulushi -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-piece me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo ulushi</h5>
+                                </div>
+                                <span
+                                    class="sale-percentage fs-5 border border-2 rounded-5 px-2 border-primary text-blue-900">57%</span>
+                            </div>
+                            <!-- Qator:2 savdo hajmi -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo hajmi</h5>
+                                </div>
+                                <span class="text-black fw-semibold fs-5">5 000 000 so'm</span>
+                            </div>
+                        </div>
+                        <!-- category footer -->
+                        <div class="category-footer p-2">
+                            <div class="row g-2 text-center">
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- category box 8 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-box border rounded-4 custom-transition hover-shadow">
+                        <!-- category box header -->
+                        <h4 class="text-center text-white py-3 fs-5">Ijtimoiy sohalar</h4>
+                        <!-- category box body -->
+                        <div class="category-body border-bottom p-2">
+                            <!-- Qator:1 savdo ulushi -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-piece me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo ulushi</h5>
+                                </div>
+                                <span
+                                    class="sale-percentage fs-5 border border-2 rounded-5 px-2 border-primary text-blue-900">57%</span>
+                            </div>
+                            <!-- Qator:2 savdo hajmi -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo hajmi</h5>
+                                </div>
+                                <span class="text-black fw-semibold fs-5">5 000 000 so'm</span>
+                            </div>
+                        </div>
+                        <!-- category footer -->
+                        <div class="category-footer p-2">
+                            <div class="row g-2 text-center">
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- category box 9 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-box border rounded-4 custom-transition hover-shadow">
+                        <!-- category box header -->
+                        <h4 class="text-center text-white py-3 fs-5">Moliyaviy va huquqiy xizmat</h4>
+                        <!-- category box body -->
+                        <div class="category-body border-bottom p-2">
+                            <!-- Qator:1 savdo ulushi -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-piece me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo ulushi</h5>
+                                </div>
+                                <span
+                                    class="sale-percentage fs-5 border border-2 rounded-5 px-2 border-primary text-blue-900">57%</span>
+                            </div>
+                            <!-- Qator:2 savdo hajmi -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2 fs-6"></i>
+                                    <h5 class="fs-6 fw-normal">Savdo hajmi</h5>
+                                </div>
+                                <span class="text-black fw-semibold fs-5">5 000 000 so'm</span>
+                            </div>
+                        </div>
+                        <!-- category footer -->
+                        <div class="category-footer p-2">
+                            <div class="row g-2 text-center">
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <img src="./assets/images/combine.png" alt="Image 1" class="img-fluid rounded" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Hududlar bo'yicha statistika section -->
+        <section id="regional-statistics-section" class="mb-5">
+            <h2 class="section-title text-center mb-2 fw-bold fs-2">Hududlar bo'yicha statistika</h2>
+            <p class="fs-6 text-center text-muted w-50 mx-auto mb-3">
+                “O'zRTXB” AJ ning davlat xaridlari tizimida milliy mahsulotlarning
+                savdolari, buyurtmachilar, tadbirkorlar haqida viloyatlar kesimida
+                statistikasi
+            </p>
+            <div class="mb-3 border rounded-4 p-4">
+                <div class="regions_dropdowns d-flex gap-2">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="year-dropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            2024-yil
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="year-dropdown">
+                            <li><a class="dropdown-item" href="#">2024-yil</a></li>
+                            <li><a class="dropdown-item" href="#">2023-yil</a></li>
+                            <li><a class="dropdown-item" href="#">2022-yil</a></li>
+                            <li><a class="dropdown-item" href="#">2021-yil</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="month-dropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Aprel
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="month-dropdown">
+                            <li><a class="dropdown-item" href="#">Yanvar</a></li>
+                            <li><a class="dropdown-item" href="#">Fevral</a></li>
+                            <li><a class="dropdown-item" href="#">Mart</a></li>
+                            <li><a class="dropdown-item" href="#">Aprel</a></li>
+                            <li><a class="dropdown-item" href="#">May</a></li>
+                            <li><a class="dropdown-item" href="#">Iyun</a></li>
+                            <li><a class="dropdown-item" href="#">Iyul</a></li>
+                            <li><a class="dropdown-item" href="#">Avgust</a></li>
+                            <li><a class="dropdown-item" href="#">Sentabr</a></li>
+                            <li><a class="dropdown-item" href="#">Oktabr</a></li>
+                            <li><a class="dropdown-item" href="#">Noyabr</a></li>
+                            <li><a class="dropdown-item" href="#">Dekabr</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="uzb_map"></div>
+            </div>
+            <!-- one-region-statistics -->
+            <div class="mb-3 border rounded-4 p-4 bg-light">
+                <h4 class="mb-3 fw-semibold">Qoraqalpog'iston respublikasi</h4>
+                <div class="row g-3">
+                    <!-- region-box-1 -->
+                    <div class="col">
+                        <div
+                            class="hover-shadow p-3 border rounded-4 bg-body custom-transition h-100 d-flex flex-column justify-content-between">
+                            <img src="./assets/images/qoraqalpog'iston.png" alt="region image" />
+                        </div>
+                    </div>
+                    <!-- region-box-2 -->
+                    <div class="col">
+                        <div
+                            class="hover-shadow p-3 border rounded-4 bg-body custom-transition h-100 d-flex flex-column justify-content-between">
+                            <div id="highcharts_container1"></div>
+                            <div>
+                                <p class="fs-6 fw-normal text-muted">Jami xaridlar</p>
+                                <h6 class="fs-5 fw-semibold">0.8 trln. so'm</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- region-box-3 -->
+                    <div class="col">
+                        <div
+                            class="hover-shadow p-3 border rounded-4 bg-body custom-transition h-100 d-flex flex-column justify-content-between">
+                            <div id="highcharts_container2"></div>
+                            <div>
+                                <p class="fs-6 fw-normal text-muted mt-3">Iqtisod qilingan mablag'</p>
+                                <h6 class="fs-5 fw-semibold">231 mlrd. so'm</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- region-box-4 -->
+                    <div class="col">
+                        <div
+                            class="hover-shadow p-3 border rounded-4 bg-body custom-transition h-100 d-flex flex-column justify-content-between">
+                            <div id="highcharts_container3"></div>
+                            <div>
+                                <p class="fs-6 fw-normal text-muted mt-3">Buyurtmachilar soni</p>
+                                <h6 class="fs-5 fw-semibold">8 105 ta</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- region-box-5 -->
+                    <div class="col">
+                        <div
+                            class="hover-shadow p-3 border rounded-4 bg-body custom-transition h-100 d-flex flex-column justify-content-between">
+                            <div id="highcharts_container4"></div>
+                            <div>
+                                <p class="fs-6 fw-normal text-muted mt-3">Tadbirkorlar soni</p>
+                                <h6 class="fs-5 fw-semibold">16 265 ta</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- region-box-6 -->
+                    <div class="col">
+                        <div
+                            class="hover-shadow p-3 border rounded-4 bg-body custom-transition h-100 d-flex flex-column justify-content-between">
+                            <div id="highcharts_container5"></div>
+                            <div>
+                                <p class="fs-6 fw-normal text-muted mt-3">Xaridlar soni</p>
+                                <h6 class="fs-5 fw-semibold">98 541 ta</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- industry of regions statistics -->
+            <div class="border rounded-4 p-4 bg-light">
+                <h4 class="mb-3 fw-semibold">Soha bo'yicha</h4>
+                <div class="row g-3">
+                    <!-- industry-box-1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div
+                            class="hover-shadow p-3 border rounded-4 bg-body custom-transition d-flex flex-column align-items-start gap-3">
+                            <i class="icon-agriculture fs-4 p-3 rounded-3 bg-indigo text-white"></i>
+                            <h5 class="text-blue-900 fw-semibold fs-4">86 mlrd so'm</h5>
+                            <small class="text-muted fs-6 fw-normal">Qishloq xo'jaligi</small>
+                        </div>
+                    </div>
+
+                    <!-- industry-box-2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div
+                            class="hover-shadow p-3 border rounded-4 bg-body custom-transition d-flex flex-column align-items-start gap-3">
+                            <i class="icon-master-cap fs-4 p-3 rounded-3 bg-orange text-white"></i>
+                            <h5 class="text-blue-900 fw-semibold fs-4">56.1 mlrd so'm</h5>
+                            <small class="text-muted fs-6 fw-normal">Ijtimoiy soha</small>
+                        </div>
+                    </div>
+
+                    <!-- industry-box-3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div
+                            class="hover-shadow p-3 border rounded-4 bg-body custom-transition d-flex flex-column align-items-start gap-3">
+                            <i class="icon-code-computer fs-4 p-3 rounded-3 bg-blue-light text-white"></i>
+                            <h5 class="text-blue-900 fw-semibold fs-4">41.6 mlrd so'm</h5>
+                            <small class="text-muted fs-6 fw-normal">Texnologiya va elektronika</small>
+                        </div>
+                    </div>
+
+                    <!-- industry-box-4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div
+                            class="hover-shadow p-3 border rounded-4 bg-body custom-transition d-flex flex-column align-items-start gap-3">
+                            <i class="icon-city fs-4 p-3 rounded-3 bg-success-500 text-white"></i>
+                            <h5 class="text-blue-900 fw-semibold fs-4">39.8 mlrd so'm</h5>
+                            <small class="text-muted fs-6 fw-normal">Qurilish va inshoatlar</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- So'ngi maxsulotlar section -->
+        <section id="latest-products" class="mb-5">
+            <h2 class="section-title text-center mb-4 fw-bold fs-2">So'ngi maxsulotlar</h2>
+            <div class="row g-3">
+
+                <!-- Product Box 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div
+                        class="hover-shadow border rounded-4 position-relative p-3 custom-transition h-100 d-flex flex-column justify-content-between ">
+                        <!-- Star Icon -->
+                        <i class="icon-star position-absolute liked"></i>
+                        <!-- Product Image -->
+                        <div class="product-img mb-3 text-center">
+                            <img src="./assets/images/product-img-1.png" alt="Product 1" />
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info">
+                            <!-- Title -->
+                            <h6 class="mb-2 fs-5 fw-semibold">Devor bo'yog'i-vodiemulsiya</h6>
+                            <!-- Product Number and Date -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fs-6">№SO15445930</span>
+                                <span class="d-flex align-items-center fs-6 border px-2 rounded-3 bg-light text-black">
+                                    <i class="icon-calendar me-2 text-muted"></i>
+                                    12.12.2024
+                                </span>
+                            </div>
+                            <!-- Quantity -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-quantity me-2"></i>
+                                    Miqdor
+                                </span>
+                                <span class="border border-primary px-2 rounded-4 bg-blue-100">370 dona</span>
+                            </div>
+                            <!-- Price -->
+                            <div class="d-flex justify-content-between">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2"></i>
+                                    Narxi
+                                </span>
+                                <span class="text-primary fw-semibold">9 000 000,00 so'm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Box 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div
+                        class="hover-shadow border rounded-4 position-relative p-3 custom-transition h-100 d-flex flex-column justify-content-between">
+                        <!-- Star Icon -->
+                        <i class="icon-star position-absolute"></i>
+                        <!-- Product Image -->
+                        <div class="product-img mb-3 text-center">
+                            <img src="./assets/images/product-img-1.png" alt="Product 1" />
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info">
+                            <!-- Title -->
+                            <h6 class="mb-2 fs-5 fw-semibold">Chiqindini tozalash xizmati</h6>
+                            <!-- Product Number and Date -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fs-6">№SO15445930</span>
+                                <span class="d-flex align-items-center fs-6 border px-2 rounded-3 bg-light text-black">
+                                    <i class="icon-calendar me-2 text-muted"></i>
+                                    12.12.2024
+                                </span>
+                            </div>
+                            <!-- Quantity -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-quantity me-2"></i>
+                                    Miqdor
+                                </span>
+                                <span class="border border-primary px-2 rounded-4 bg-blue-100">370 dona</span>
+                            </div>
+                            <!-- Price -->
+                            <div class="d-flex justify-content-between">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2"></i>
+                                    Narxi
+                                </span>
+                                <span class="text-primary fw-semibold">9 000 000,00 so'm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Box 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div
+                        class="hover-shadow border rounded-4 position-relative p-3 custom-transition h-100 d-flex flex-column justify-content-between">
+                        <!-- Star Icon -->
+                        <i class="icon-star position-absolute liked"></i>
+                        <!-- Product Image -->
+                        <div class="product-img mb-3 text-center">
+                            <img src="./assets/images/product-img-1.png" alt="Product 1" />
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info">
+                            <!-- Title -->
+                            <h6 class="mb-2 fs-5 fw-semibold">Monoblok</h6>
+                            <!-- Product Number and Date -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fs-6">№SO15445930</span>
+                                <span class="d-flex align-items-center fs-6 border px-2 rounded-3 bg-light text-black">
+                                    <i class="icon-calendar me-2 text-muted"></i>
+                                    12.12.2024
+                                </span>
+                            </div>
+                            <!-- Quantity -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-quantity me-2"></i>
+                                    Miqdor
+                                </span>
+                                <span class="border border-primary px-2 rounded-4 bg-blue-100">370 dona</span>
+                            </div>
+                            <!-- Price -->
+                            <div class="d-flex justify-content-between">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2"></i>
+                                    Narxi
+                                </span>
+                                <span class="text-primary fw-semibold">9 000 000,00 so'm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Box 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div
+                        class="hover-shadow border rounded-4 position-relative p-3 custom-transition h-100 d-flex flex-column justify-content-between">
+                        <!-- Star Icon -->
+                        <i class="icon-star position-absolute"></i>
+                        <!-- Product Image -->
+                        <div class="product-img mb-3 text-center">
+                            <img src="./assets/images/product-img-1.png" alt="Product 1" />
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info">
+                            <!-- Title -->
+                            <h6 class="mb-2 fs-5 fw-semibold">Portlend sement</h6>
+                            <!-- Product Number and Date -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fs-6">№SO15445930</span>
+                                <span class="d-flex align-items-center fs-6 border px-2 rounded-3 bg-light text-black">
+                                    <i class="icon-calendar me-2 text-muted"></i>
+                                    12.12.2024
+                                </span>
+                            </div>
+                            <!-- Quantity -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-quantity me-2"></i>
+                                    Miqdor
+                                </span>
+                                <span class="border border-primary px-2 rounded-4 bg-blue-100">370 dona</span>
+                            </div>
+                            <!-- Price -->
+                            <div class="d-flex justify-content-between">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2"></i>
+                                    Narxi
+                                </span>
+                                <span class="text-primary fw-semibold">9 000 000,00 so'm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Box 5 -->
+                <div class="col-md-6 col-lg-3">
+                    <div
+                        class="hover-shadow border rounded-4 position-relative p-3 custom-transition h-100 d-flex flex-column justify-content-between">
+                        <!-- Star Icon -->
+                        <i class="icon-star position-absolute"></i>
+                        <!-- Product Image -->
+                        <div class="product-img mb-3 text-center">
+                            <img src="./assets/images/product-img-1.png" alt="Product 1" />
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info">
+                            <!-- Title -->
+                            <h6 class="mb-2 fs-5 fw-semibold">Storopila</h6>
+                            <!-- Product Number and Date -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fs-6">№SO15445930</span>
+                                <span class="d-flex align-items-center fs-6 border px-2 rounded-3 bg-light text-black">
+                                    <i class="icon-calendar me-2 text-muted"></i>
+                                    12.12.2024
+                                </span>
+                            </div>
+                            <!-- Quantity -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-quantity me-2"></i>
+                                    Miqdor
+                                </span>
+                                <span class="border border-primary px-2 rounded-4 bg-blue-100">370 dona</span>
+                            </div>
+                            <!-- Price -->
+                            <div class="d-flex justify-content-between">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2"></i>
+                                    Narxi
+                                </span>
+                                <span class="text-primary fw-semibold">9 000 000,00 so'm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Box 6 -->
+                <div class="col-md-6 col-lg-3">
+                    <div
+                        class="hover-shadow border rounded-4 position-relative p-3 custom-transition h-100 d-flex flex-column justify-content-between">
+                        <!-- Star Icon -->
+                        <i class="icon-star position-absolute"></i>
+                        <!-- Product Image -->
+                        <div class="product-img mb-3 text-center">
+                            <img src="./assets/images/product-img-1.png" alt="Product 1" />
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info">
+                            <!-- Title -->
+                            <h6 class="mb-2 fs-5 fw-semibold">LED yoritg'ichi</h6>
+                            <!-- Product Number and Date -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fs-6">№SO15445930</span>
+                                <span class="d-flex align-items-center fs-6 border px-2 rounded-3 bg-light text-black">
+                                    <i class="icon-calendar me-2 text-muted"></i>
+                                    12.12.2024
+                                </span>
+                            </div>
+                            <!-- Quantity -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-quantity me-2"></i>
+                                    Miqdor
+                                </span>
+                                <span class="border border-primary px-2 rounded-4 bg-blue-100">370 dona</span>
+                            </div>
+                            <!-- Price -->
+                            <div class="d-flex justify-content-between">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2"></i>
+                                    Narxi
+                                </span>
+                                <span class="text-primary fw-semibold">9 000 000,00 so'm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Box 7 -->
+                <div class="col-md-6 col-lg-3">
+                    <div
+                        class="hover-shadow border rounded-4 position-relative p-3 custom-transition h-100 d-flex flex-column justify-content-between">
+                        <!-- Star Icon -->
+                        <i class="icon-star position-absolute"></i>
+                        <!-- Product Image -->
+                        <div class="product-img mb-3 text-center">
+                            <img src="./assets/images/product-img-1.png" alt="Product 1" />
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info">
+                            <!-- Title -->
+                            <h6 class="mb-2 fs-5 fw-semibold">Studiya kalonkasi</h6>
+                            <!-- Product Number and Date -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fs-6">№SO15445930</span>
+                                <span class="d-flex align-items-center fs-6 border px-2 rounded-3 bg-light text-black">
+                                    <i class="icon-calendar me-2 text-muted"></i>
+                                    12.12.2024
+                                </span>
+                            </div>
+                            <!-- Quantity -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-quantity me-2"></i>
+                                    Miqdor
+                                </span>
+                                <span class="border border-primary px-2 rounded-4 bg-blue-100">370 dona</span>
+                            </div>
+                            <!-- Price -->
+                            <div class="d-flex justify-content-between">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2"></i>
+                                    Narxi
+                                </span>
+                                <span class="text-primary fw-semibold">9 000 000,00 so'm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Box 8 -->
+                <div class="col-md-6 col-lg-3">
+                    <div
+                        class="hover-shadow border rounded-4 position-relative p-3 custom-transition h-100 d-flex flex-column justify-content-between">
+                        <!-- Star Icon -->
+                        <i class="icon-star position-absolute"></i>
+                        <!-- Product Image -->
+                        <div class="product-img mb-3 text-center">
+                            <img src="./assets/images/product-img-1.png" alt="Product 1" />
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info">
+                            <!-- Title -->
+                            <h6 class="mb-2 fs-5 fw-semibold">Televizor stend</h6>
+                            <!-- Product Number and Date -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fs-6">№SO15445930</span>
+                                <span class="d-flex align-items-center fs-6 border px-2 rounded-3 bg-light text-black">
+                                    <i class="icon-calendar me-2 text-muted"></i>
+                                    12.12.2024
+                                </span>
+                            </div>
+                            <!-- Quantity -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-quantity me-2"></i>
+                                    Miqdor
+                                </span>
+                                <span class="border border-primary px-2 rounded-4 bg-blue-100">370 dona</span>
+                            </div>
+                            <!-- Price -->
+                            <div class="d-flex justify-content-between">
+                                <span class="d-flex align-items-center text-muted">
+                                    <i class="icon-invoice me-2"></i>
+                                    Narxi
+                                </span>
+                                <span class="text-primary fw-semibold">9 000 000,00 so'm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="./products-list.html" class="btn btn-primary load-btn">Barcha mahsulotlar</a>
+        </section>
+
+        <!-- Umumiy statistika section -->
+        <section id="overall-statistics" class="mb-5">
+            <h2 class="section-title text-center mb-4 fw-bold fs-2">Umumiy statistika</h2>
+            <div class="border p-4 rounded-4 custom-transition shadow-sm">
+                <input type="date" class="form-control d-inline-block w-fit mb-1" />
+                <div id="highcharts_container"></div>
+                <div class="row g-3 mt-1">
+                    <!-- Statistics Col 1 -->
+                    <div class="col">
+                        <h6>$48.09</h6>
+                        <span class="text-muted">Qurilish va inshootlar</span>
+                    </div>
+
+                    <!-- Statistics Col 2 -->
+                    <div class="col">
+                        <h6>$21.12</h6>
+                        <span class="text-muted">Qishloq xo'jaligi</span>
+                    </div>
+
+                    <!-- Statistics Col 3 -->
+                    <div class="col">
+                        <h6>$9.60</h6>
+                        <span class="text-muted">Metallurgiya va kimyo</span>
+                    </div>
+
+                    <!-- Statistics Col 4 -->
+                    <div class="col">
+                        <h6>$5.89</h6>
+                        <span class="text-muted"> Yengil sanoat va iste'mol</span>
+                    </div>
+
+                    <!-- Statistics Col 5 -->
+                    <div class="col">
+                        <h6>$8.79</h6>
+                        <span class="text-muted">Texnologiya va elektronika</span>
+                    </div>
+
+                    <!-- Statistics Col 6 -->
+                    <div class="col">
+                        <h6>$39.00</h6>
+                        <span class="text-muted">Xizmatlar va transport</span>
+                    </div>
+
+                    <!-- Statistics Col 7 -->
+                    <div class="col">
+                        <h6>$31.77</h6>
+                        <span class="text-muted">Ijtimoiy xizmatlar</span>
+                    </div>
+
+                    <!-- Statistics Col 8 -->
+                    <div class="col">
+                        <h6>$45.54</h6>
+                        <span class="text-muted">Moliyaviy va huquqiy xizmatlar</span>
+                    </div>
+
+                    <!-- Statistics Col 9 -->
+                    <div class="col">
+                        <h6>$45.66</h6>
+                        <span class="text-muted">Moliyaviy va huquqiy xizmatlar</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-900 pt-5 pb-4 position-relative text-white lh-lg">
+        <img src="./assets/images/bg-shape-footer.svg" alt="footer shape image"
+            class="position-absolute top-0 end-0 h-100">
+        <div class="container">
+            <!-- Footer Row 1  -->
+            <div class="row mb-4">
+                <!-- Column 1 -->
+                <div class="col-md-6">
+                    <p>
+                        Vakolatli organ : O'zbekiston Respublikasi Iqtisodiyot va moliya
+                        vazirligi
+                    </p>
+                    <p>
+                        Manzil: 100017 O'zbekiston Respublikasi, Toshkent sh. , Istiqlol
+                        ko'chasi 29-uy
+                    </p>
+                    <p>Telefon: <a class="hover-orange" href="tel:+998712035050"> (71) 203-50-50</a></p>
+                    <p>E-mail: <a class="hover-orange" href="mailto:info@mf.uz">info&commat;mf.uz</a></p>
+                    <p>
+                        E-xat: Vazirlik va idoralar uchun
+                        <a class="hover-orange" href="mailto: mf@exat.uz"> mf&commat;exat.uz</a>
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><a class="hover-orange" href="#">Termin va atamalar</a></li>
+                        <li><a class="hover-orange" href="#">Maxfiylik siyosati</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-6">
+                    <p>
+                        Operator: "O'zbekiston respublika tovar-xom ashyo birjasi"
+                        aksiyadorlik jamiyati
+                    </p>
+                    <p>
+                        Manzil: 100090, O'zbekiston Respublikasi, Toshkent sh. , Bobur
+                        ko'chasi,77
+                    </p>
+                    <p>Call-Center: <a class="hover-orange" href="tel:+998712070033">71-207-00-33</a></p>
+                    <p>E-mail: <a class="hover-orange" href="mailto:info@rtsb.uz">info&commat;rtsb.uz</a></p>
+                </div>
+            </div>
+            <hr />
+            <!-- Footer Row 2 -->
+            <div class="row mb-4">
+                <!-- Column 1 -->
+                <div class="col-md-6">
+                    <h4>Korporativ buyurtmachilar va ishtirokchilar uchun rekvizitlar</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="hover-orange" href="#">STIR 200933985</a></li>
+                        <li><a class="hover-orange" href="#">Hisob raqam: 20208000000600257003</a></li>
+                        <li><a class="hover-orange" href="#">MFO 00980 Bank "Octobank" AJ ("Ravnaq-bank" AJ)</a></li>
+                    </ul>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-md-6">
+                    <h4>Budjet buyurtmachilari uchun rekvizitlar</h4>
+                    <ul class="list-unstyled">
+                        <li>Vositalik yig'imi to'lash uchun hisobvaraq: <a class="hover-orange"
+                                href="#">700110860262877950600262006</a></li>
+                        <li>Shartnoma bo'yicha to'lov uchun hisobvaraq: <a class="hover-orange"
+                                href="#">700110860262877950600262007</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Row 3 -->
+            <div class="mb-4 social-media">
+                <p class="mb-2">Ijtimoiy tarmoqlar</p>
+                <div class="d-flex gap-3">
+                    <a href="#">
+                        <i class="fs-4 custom-transition icon-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fs-4 custom-transition icon-telegram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fs-4 custom-transition icon-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fs-4 custom-transition icon-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Row 4 -->
+            <p class="text-center">© 1994. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP BUNDLE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"
+        defer></script>
+
+    <!-- HIGHCHART.JS -->
+    <script src="https://code.highcharts.com/highcharts.js" defer></script>
+    <script src="https://code.highcharts.com/modules/exporting.js" defer></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js" defer></script>
+
+    <!-- HIGHMAPS.JS -->
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
+    <!-- MAIN.JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+/* Carousel section styles */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #ffffff4d;
+    width: 3rem;
+    height: 3rem;
+    background-size: 60% 60%;
+    border-radius: 50%;
+    backdrop-filter: blur(20px);
+}
+
+.carousel-indicators button {
+    border-radius: 50% !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+/* Umumiy ko'rsatkichlar section styles */
+
+
+
+/* Sohalar kesimida davlat xaridlari section styles */
+
+.category-box h4 {
+    background-color: var(--blue-400);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* So'ngi maxsulotlar section styles */
+
+.icon-star {
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--gray-400);
+    border: 1px solid var(--gray-200);
+    padding: 8px;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+}
+
+.icon-star.liked {
+    color: var(--orange);
+}
+
+
+
