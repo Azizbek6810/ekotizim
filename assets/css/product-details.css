@@ -1,3 +1,15 @@
+/* Carousel section styles */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #ffffff4d;
+    width: 3rem;
+    height: 3rem;
+    background-size: 60% 60%;
+    border-radius: 50%;
+    backdrop-filter: blur(20px);
+}
+
 .dropdown-menu {
     max-height: 150px;
     overflow-y: auto;
@@ -46,4 +58,27 @@
     border-bottom: 2px solid var(--blue-700);
     color: var(--blue-700);
     background: var(--white);
+}
+
+.modal-body .carousel-control-prev {
+    left: -100px;
+}
+
+.modal-body .carousel-control-next {
+    right: -100px;
+}
+
+.modal-body .carousel-indicators{
+    bottom: -60px;
+}
+
+.carousel-indicators button {
+    border-radius: 50% !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.carousel-item img{
+    width: 500px;
+    object-fit: contain;
 }

@@ -16,10 +16,6 @@
     height: 12px !important;
 }
 
-/* Umumiy ko'rsatkichlar section styles */
-
-
-
 /* Sohalar kesimida davlat xaridlari section styles */
 
 .category-box h4 {
@@ -33,6 +29,7 @@
 #latest-products .icon-star {
     top: 10px;
     right: 10px;
+    cursor: pointer;
 }
 
 .product-img img{

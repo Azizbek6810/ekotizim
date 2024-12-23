@@ -106,10 +106,11 @@
                 </ol>
             </nav>
             <h2 class="section-title mb-5 fw-bold fs-2">Mahsulot sahifasi</h2>
-            <div class="row mb-4">
+            <div class="row mb-4 align-items-stretch">
                 <!-- Column 1 -->
                 <div class="product-images col-6">
-                    <div class="border rounded-4 text-center p-4 mb-3">
+                    <div class="border rounded-4 text-center p-4 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#productImageModal">
                         <img class="main-img custom-transition" src="./assets/images/bag.png" alt="Main Product Image">
                     </div>
                     <div class="thumbnail-images d-flex align-items-center justify-content-between">
@@ -142,11 +143,12 @@
                             <span class="text-decoration-underline text-muted fs-5">14 ta izoh</span>
                         </div>
                     </div>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <span class="fs-5 text-muted">Birlik uchun narx:</span>
-                        <strong class="fs-4">161 000 000 so'm</strong>
-                    </div>
+                    <hr class="m-0">
+                    <button class="btn btn-primary d-flex align-items-center justify-content-center gap-2"
+                        data-bs-toggle="modal" data-bs-target="#givePiceModal">
+                        <i class="icon-legal"></i>
+                        <span>Taklif kiritish</span>
+                    </button>
                     <div class="box mt-3 border rounded-4 bg-light p-3 d-flex flex-column gap-2">
                         <div class="d-flex justify-content-between">
                             <span class="text-muted">Status:</span>
@@ -184,11 +186,24 @@
                     </div>
                 </div>
             </div>
+            <div class="row mb-4">
+                <div class="col-lg-6">
+                    <div class="border rounded-4 bg-light p-3">
+                        <h3>Countdown</h3>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column align-items-center border rounded-4 bg-light p-3">
+                        <span class="fs-5 text-muted">Boshlang'ich narx</span>
+                        <strong class="fs-4">161 000 000 so'm</strong>
+                    </div>
+                </div>
+            </div>
             <!-- TABS -->
             <ul class="product-info-tabs nav nav-tabs gap-2 d-flex justify-content-around" id="myTab" role="tablist">
                 <!-- TAVSIF TAB BUTTON -->
                 <li class="nav-item w-25" role="presentation">
-                    <button class="nav-link w-100 active" id="description-tab" data-bs-toggle="tab"
+                    <button class="nav-link w-100 " id="description-tab" data-bs-toggle="tab"
                         data-bs-target="#description-tab-pane" type="button" role="tab"
                         aria-controls="description-tab-pane" aria-selected="true">Tavsif</button>
                 </li>
@@ -202,7 +217,7 @@
                 </li>
                 <!-- IZOHLAR VA FIKRLAR TAB BUTTON -->
                 <li class="nav-item w-25" role="presentation">
-                    <button class="nav-link w-100" id="comments-tab" data-bs-toggle="tab"
+                    <button class="nav-link w-100 active" id="comments-tab" data-bs-toggle="tab"
                         data-bs-target="#comments-tab-pane" type="button" role="tab" aria-controls="comments-tab-pane"
                         aria-selected="false">
                         Izohlar va fikrlar
@@ -211,9 +226,9 @@
             </ul>
             <div class="tab-content" id="myTabContent">
                 <!-- TAVSIF TAB -->
-                <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel"
+                <div class="tab-pane fade mt-4" id="description-tab-pane" role="tabpanel"
                     aria-labelledby="description-tab" tabindex="0">
-                    <div class="row justify-content-between mt-4 align-items-start">
+                    <div class="row justify-content-between align-items-start">
                         <div class="col-6">
                             <!-- row 1 -->
                             <div class="mb-4 d-flex flex-column gap-3">
@@ -430,12 +445,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- IZOHLAR VA FIKRLAR TAB -->
-                <div class="tab-pane fade" id="product-features-tab-pane" role="tabpanel"
+                <div class="tab-pane fade mt-4" id="product-features-tab-pane" role="tabpanel"
                     aria-labelledby="product-features-tab" tabindex="0">
-                    <div class="border rounded-4 bg-light p-3 mt-4">
+                    <div class="border rounded-4 bg-light p-3">
                         <h4 class="mb-3">Texnik xususiyatlari</h4>
                         <p class="text-muted">
                             ПРЕИМУЩЕСТВА Высокая энергоэффективность А Автоматическая балансировка барабана ✓ Широкий
@@ -448,17 +462,282 @@
                 </div>
 
                 <!-- TOVARNING XUSUSIYATLARI TAB -->
-                <div class="tab-pane fade" id="comments-tab-pane" role="tabpanel" aria-labelledby="comments-tab"
-                    tabindex="0">
-                    <div class="form-floating mt-4">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                            style="height: 150px"></textarea>
-                        <label for="floatingTextarea2">Fikr va izohlaringizni qoldiring...</label>
+                <div class="tab-pane fade mt-4 show active" id="comments-tab-pane" role="tabpanel"
+                    aria-labelledby="comments-tab" tabindex="0">
+                    <h3 class="fw-semibold">Izohlar</h3>
+                    <div class="row justify-content-between align-items-start mt-4">
+                        <div class="comment-boxes col-8">
+                            <!-- comment box 1 -->
+                            <div class="comment-box d-flex gap-2 align-items-start mb-4">
+                                <i class="icon-user p-3 bg-light fs-4 rounded-circle border"></i>
+                                <div>
+                                    <h5 class="fw-semibold fs-4 mb-1">Muzaffar Azimov <small
+                                            class="text-muted fs-6 fw-light">2 oy avval.</small></h5>
+                                    <div class="star-icons mb-1">
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                    </div>
+                                    <p>
+                                        ПРЕИМУЩЕСТВА Высокая энергоэффективность А Автоматическая балансировка барабана
+                                        ✓ Широкий загрузочный люк ✓ Низкий уровень шума ✓ Антибактериальное покрытие
+                                        барабана ✓ AddWash – функция дозагрузки белья (доступна во всех режимах, кроме
+                                        «Шерсть» и «Пуховые вещи») ✓ ОБЩИЕ ХАРАКТЕРИСТИКИ Максимальный объем загрузки
+                                        при стирке (сухое белье), кг (не более) 8,0 Максимальная частота вращения
+                                        барабана при отжиме в минуту 1200,0 Уровень шума при с
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- comment box 2 -->
+                            <div class="comment-box d-flex gap-2 align-items-start mb-4">
+                                <i class="icon-user p-3 bg-light fs-4 rounded-circle border"></i>
+                                <div>
+                                    <h5 class="fw-semibold fs-4 mb-1">Samandar Salomov <small
+                                            class="text-muted fs-6 fw-light">2 oy avval.</small></h5>
+                                    <div class="star-icons mb-1">
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                    </div>
+                                    <p>
+                                        ПРЕИМУЩЕСТВА Высокая энергоэффективность А Автоматическая балансировка барабана
+                                        ✓ Широкий загрузочный люк ✓ Низкий уровень шума ✓ Антибактериальное покрытие.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- comment box 3 -->
+                            <div class="comment-box d-flex gap-2 align-items-start mb-4">
+                                <i class="icon-user p-3 bg-light fs-4 rounded-circle border"></i>
+                                <div>
+                                    <h5 class="fw-semibold fs-4 mb-1">Alisher Tojiyev<small
+                                            class="text-muted fs-6 fw-light">2 oy avval.</small></h5>
+                                    <div class="star-icons mb-1">
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                        <i class="icon-star liked"></i>
+                                    </div>
+                                    <p>
+                                        ПРЕИМУЩЕСТВА Высокая энергоэффективность А Автоматическая балансировка барабана
+                                        ✓ Широкий загрузочный люк ✓ Низкий уровень шума ✓ Антибактериальное покрытие
+                                        барабана ✓ AddWash – функция дозагрузки белья (доступна во всех режимах, кроме
+                                        «Шерсть» и «Пуховые вещи») ✓ ОБЩИЕ ХАРАКТЕРИСТИКИ Максимальный объем загрузки
+                                        при стирке (сухое белье).
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="btn bg-body border rounded-3 load-btn">Ko'proq</button>
+                        </div>
+                        <div class="col-4">
+                            <div class="create-comment border bg-light rounded-4 p-3">
+                                <h3 class="fw-semibold">5.0</h3>
+                                <div class="mb-1">
+                                    <i class="icon-star liked"></i>
+                                    <i class="icon-star liked"></i>
+                                    <i class="icon-star liked"></i>
+                                    <i class="icon-star liked"></i>
+                                    <i class="icon-star liked"></i>
+                                </div>
+                                <p>17 ta baho asosida</p>
+                                <!-- 5 ball -->
+                                <div class="my-3 5-ball d-flex align-items-center gap-2">
+                                    <i class="icon-star liked"></i>
+                                    <small>5</small>
+                                    <div class="progress w-100">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 4 ball -->
+                                <div class="my-3 4-ball d-flex align-items-center gap-2">
+                                    <i class="icon-star liked"></i>
+                                    <small>4</small>
+                                    <div class="progress w-100">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 ball -->
+                                <div class="my-3 3-ball d-flex align-items-center gap-2">
+                                    <i class="icon-star liked"></i>
+                                    <small>3</small>
+                                    <div class="progress w-100">
+                                        <div class="progress-bar" role="progressbar" style="width: 30%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 ball -->
+                                <div class="my-3 2-ball d-flex align-items-center gap-2">
+                                    <i class="icon-star liked"></i>
+                                    <small>2</small>
+                                    <div class="progress w-100">
+                                        <div class="progress-bar" role="progressbar" style="width: 15%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 1 ball -->
+                                <div class="my-3 1-ball d-flex align-items-center gap-2">
+                                    <i class="icon-star liked"></i>
+                                    <small>1</small>
+                                    <div class="progress w-100">
+                                        <div class="progress-bar" role="progressbar" style="width: 15%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary text-white load-btn">Izoh qoldirish</button>
+                            </div>
+                            <!-- create-comment textarea -->
+                            <div class="form-floating mt-4" style="display: none;">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 150px"></textarea>
+                                <label for="floatingTextarea2">Fikr va izohlaringizni qoldiring...</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Product image modal -->
+    <div class="modal fade" id="productImageModal" tabindex="-1" aria-labelledby="productImageModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/bag.png" class="d-block w-100" alt="product image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/product-img-1.png" class="d-block w-100" alt="product image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/product-img-2.png" class="d-block w-100" alt="product image">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Give a price modal -->
+    <div class="modal fade" id="givePiceModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-5" id="exampleModalLabel">
+                        <i class="icon-legal p-2 rounded-3 border"></i>
+                        <span>Narx taklif qilish</span>
+                    </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="border p-3 rounded-4 bg-light mb-4 d-flex gap-2 align-items-start shadow-sm">
+                        <i class="icon-alert-circle text-danger fs-4"></i>
+                        <div class="d-flex flex-column gap-1">
+                            <h6 class="fw-semibold">This project has been unpublished</h6>
+                            <small class="">
+                                Removing all users has unpublished this project. Add users to republish.
+                            </small>
+                        </div>
+                    </div>
+                    <!-- give price modal form -->
+                    <form class="row mb-3">
+                        <div class="d-flex flex-column col-6">
+                            <label for="exampleFormControlInput1" class="form-label">Narx</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Narxni kiriting">
+                        </div>
+                        <div class="d-flex flex-column col-6">
+                            <label for="appeal_direction" class="form-label">
+                                Hisob raqami
+                            </label>
+                            <select class="form-select" aria-label="Murojaat yo'nalishini tanlang"
+                                id="appeal_direction">
+                                <option selected>
+                                    Hisob raqamini tanlang
+                                </option>
+                                <option value="1">5435435345435435</option>
+                                <option value="2">4523465465656566</option>
+                                <option value="3">7656765354654364</option>
+                            </select>
+                            <small class="text-primary mt-1">Доступная сумма: 1 500 000 UZS</small>
+                        </div>
+                    </form>
+                    <div class="border bg-light p-3 rounded-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-muted fs-6">Komissiya:</span>
+                            <p class="fs-6 fw-semibold">1 500 000 so'm</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-muted fs-6">Garov summasi:</span>
+                            <p class="fs-6 fw-semibold">500 000 so'm</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted fs-6">Umumiy:</span>
+                            <p class="fs-5 fw-semibold">2 000 000 so'm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn bg-body border" data-bs-dismiss="modal">Bekor qilish</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal"
+                        data-bs-target="#givenPiceAcceptedModal">Yuborish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Given price accepted modal -->
+    <div class="modal fade" id="givenPiceAcceptedModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-5" id="exampleModalLabel">
+                        <i class="icon-checkmark-circle p-2 rounded-circle bg-success-secondary text-success"></i>
+                    </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Narx taklifi qabul qilindi</h4>
+                    <small>
+                        This blog post has been published. Team members will be able to edit this post and republish
+                        changes.
+                    </small>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tushunarli</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="bg-blue-900 pt-5 pb-4 position-relative text-white lh-lg">
         <img src="./assets/images/bg-shape-footer.svg" alt="footer shape image"

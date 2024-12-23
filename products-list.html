@@ -98,34 +98,153 @@
 
         <!-- So'ngi maxsulotlar section -->
         <section id="latest-products" class="mb-5">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-muted" href="#">Bosh sahifa</a></li>
-                    <li class="breadcrumb-item"><a class="text-muted" href="#">Xaridlar</a></li>
-                    <li class="breadcrumb-item active text-black" aria-current="page">Milliy do'kon</li>
-                </ol>
-            </nav>
-            <h2 class="section-title mb-4 fw-bold fs-2">Tovarlar katalogi</h2>
-            <div class="section-header d-flex justify-content-between align-items-center mb-4">
-                <p>
-                    <span class="me-1 text-muted">Topilgan tovarlar:</span>
-                    <span class="px-2 py-1 rounded-3 bg-blue-100 text-primary fs-6">64848</span>
-                </p>
-                <div class="d-flex align-items-center justify-content-center gap-3">
-                    <div class="input-group">
-                        <span class="input-group-text bg-transparent" id="basic-addon1">
-                            <i class="icon-search"></i>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Поиск" aria-label="Username"
-                            aria-describedby="basic-addon1">
+            <div class="section-header mb-4">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="text-muted" href="#">Bosh sahifa</a></li>
+                        <li class="breadcrumb-item"><a class="text-muted" href="#">Xaridlar</a></li>
+                        <li class="breadcrumb-item active text-black" aria-current="page">Milliy do'kon</li>
+                    </ol>
+                </nav>
+                <h2 class="section-title mb-4 fw-bold fs-2">Tovarlar katalogi</h2>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <p>
+                        <span class="me-1 text-muted">Topilgan tovarlar:</span>
+                        <span class="px-2 py-1 rounded-3 bg-blue-100 text-primary fs-6">64848</span>
+                    </p>
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <!-- search input group -->
+                        <div class="input-group">
+                            <span class="input-group-text bg-transparent" id="basic-addon1">
+                                <i class="icon-search"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Поиск" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <!-- filter button -->
+                        <button type="button"
+                            class="btn btn-light border border-2 bg-transparent d-flex align-items-center justify-content-center gap-2"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasProductFilter"
+                            aria-controls="offcanvasProductFilter">
+                            <i class="icon-filter"></i>
+                            <span>Фильтр</span>
+                        </button>
+                        <!-- offcanvas -->
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProductFilter"
+                            aria-labelledby="offcanvasProductFilterLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasProductFilterLabel">Filter</h5>
+                                <i class="icon-cancel-circle" data-bs-dismiss="offcanvas"></i>
+                            </div>
+                            <hr class="my-0" />
+                            <div class="offcanvas-body">
+                                <form class="filter_form">
+                                    <div class="inputs_wrapper">
+                                        <div class="d-flex flex-column gap-2">
+                                            <label for="filter-search">Asosit kalit so'zi</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-body" id="filter_qidirish">
+                                                    <i class="icon-search"></i>
+                                                </span>
+                                                <input type="text" class="form-control" placeholder="Qidirish"
+                                                    aria-label="Qidirish" aria-describedby="filter_qidirish"
+                                                    id="filter-search" />
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <label for="appeal_direction" class="form-label">Tovarlar
+                                                kategoriyasi</label>
+                                            <select class="form-select" aria-label="Murojaat yo'nalishini tanlang"
+                                                id="appeal_direction">
+                                                <option selected>
+                                                    Tovarlar kategoriyasini tanlang
+                                                </option>
+                                                <option value="1">Kommunal soha</option>
+                                                <option value="2">Transport</option>
+                                                <option value="3">Savdo sohasi</option>
+                                            </select>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <label for="summa" class="form-label">Summa</label>
+                                            <div class="d-flex gap-2">
+                                                <input type="number" class="form-control" id="summa"
+                                                    placeholder=".... dan">
+                                                <input type="number" class="form-control" id="summa"
+                                                    placeholder=".... gacha">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <label for="appeal_category" class="form-label">
+                                                Tovarlar ro'yxati
+                                            </label>
+                                            <select class="form-select" aria-label="Murojaat kategoriyasini tanlang"
+                                                id="appeal_category">
+                                                <option selected>
+                                                    Tovarni tanlang
+                                                </option>
+                                                <option value="1">Bo'yoqlar</option>
+                                                <option value="2">Personal computer</option>
+                                                <option value="3">Radioblock</option>
+                                            </select>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <label for="status" class="form-label">Hududni</label>
+                                            <select class="form-select" aria-label="Status" id="status">
+                                                <option selected>Hududni tanlang</option>
+                                                <option value="1">Toshkent</option>
+                                                <option value="2">Andijon</option>
+                                                <option value="3">Namangan</option>
+                                            </select>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <label for="status" class="form-label">Tuman</label>
+                                            <select class="form-select" aria-label="Status" id="status">
+                                                <option selected>Tumanni tanlang</option>
+                                                <option value="1">Mirzo Ulug'bek</option>
+                                                <option value="2">Yunusobod</option>
+                                                <option value="3">Yakkasaroy</option>
+                                            </select>
+                                        </div>
+                                        <h4>Saralash</h4>
+                                        <div class="d-flex flex-column">
+                                            <label for="status" class="form-label">Narx bo'yich</label>
+                                            <select class="form-select" aria-label="Status" id="status">
+                                                <option selected>...ga ko'ra saralash</option>
+                                                <option value="1">O'sish tartibida</option>
+                                                <option value="2">Kamayish tartibida</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="filter_buttons">
+                                        <button type="submit" class="btn btn-outline-danger">
+                                            Bekor qilish
+                                        </button>
+                                        <button type="submit" class="btn btn-primary">
+                                            Saqlash
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <button type="button"
-                        class="btn btn-light border border-2 bg-transparent d-flex align-items-center justify-content-center gap-2">
-                        <i class="icon-filter"></i>
-                        <span>Фильтр</span>
-                    </button>
+                </div>
+                <div class="filter-result d-flex gap-2 flex-wrap">
+                    <!-- result item-1 -->
+                    <div class="result_item">
+                        <span>Kalit so'zi:</span>
+                        <h5>Monoblock</h5>
+                        <i class="icon-x-close"></i>
+                    </div>
+                    <!-- result item-2 -->
+                    <div class="result_item">
+                        <span>Tovarlar kategoriyasi:</span>
+                        <h5>Qurilish</h5>
+                        <i class="icon-x-close"></i>
+                    </div>
                 </div>
             </div>
+
+
             <div class="row g-3">
 
                 <!-- Product Box 1 -->
