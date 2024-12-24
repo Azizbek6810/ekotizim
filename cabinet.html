@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products list</title>
+
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <!-- GLOBAL CSS LINK -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+
+    <!-- HOME CSS LINK -->
+    <link rel="stylesheet" href="./assets/css/cabinet.css" />
+</head>
+
+<body>
+
+    <main>
+        <div class="section-cabinet container-fluid">
+            <div class="row flex-nowrap">
+                <div class="left_sidebar col-auto col-md-3 col-xl-2 px-sm-2 text-white bg-sidebar shadow">
+                    <div class="fixed">
+                        <div
+                            class="d-flex flex-column align-items-center align-items-sm-start min-vh-100 px-3 gap-3 bg-sidebar">
+                            <div class="header__logo py-4">
+                                <a href="index.html" class="cabinet_logo__link">
+                                    <img src="./assets/images/logo-white.svg" alt="logo" />
+                                </a>
+                            </div>
+                            <ul class="custom_ul nav nav-pills w-100 flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start gap-2"
+                                id="menu">
+                                <li class="nav-item w-100">
+                                    <a href="#"
+                                        class="nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white">
+                                        <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
+                                            <i class="icon-home-line"></i>
+                                            <small class="d-none d-sm-inline"> Asosiy </small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#bildirishnoma"
+                                        class="nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white"
+                                        data-bs-toggle="collapse">
+                                        <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
+                                            <i class="icon-dashboard-square"></i>
+                                            <small class="d-none d-sm-inline">
+                                                Boshqaruv paneli
+                                            </small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#"
+                                        class="nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white">
+                                        <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
+                                            <i class="icon-setting"></i>
+                                            <small class="d-none d-sm-inline"> Sozlamalar </small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#malumotlar"
+                                        class="nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white"
+                                        data-bs-toggle="collapse">
+                                        <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
+                                            <i class="icon-calendar-plus"></i>
+                                            <small class="d-none d-sm-inline"> Joylashtirish </small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#malumotlar"
+                                        class="nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white"
+                                        data-bs-toggle="collapse">
+                                        <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
+                                            <i class="icon-dropbox"></i>
+                                            <small class="d-none d-sm-inline"> Mening tovarlarim </small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#malumotlar"
+                                        class="nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white"
+                                        data-bs-toggle="collapse">
+                                        <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
+                                            <i class="icon-inbox"></i>
+                                            <small class="d-none d-sm-inline"> Mening lotlarim</small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#malumotlar"
+                                        class="nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white"
+                                        data-bs-toggle="collapse">
+                                        <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
+                                            <i class="icon-legal-document"></i>
+                                            <small class="d-none d-sm-inline"> Qabul qilingan takliflar</small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#malumotlar"
+                                        class="nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white"
+                                        data-bs-toggle="collapse">
+                                        <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
+                                            <i class="icon-hand-shake"></i>
+                                            <small class="d-none d-sm-inline"> Mening bitimlarim</small>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr />
+                            <div class="text-center pb-4">App version: <b>1.0.0</b> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_sidebar col p-0">
+                    <!-- Header Section -->
+                    <header id="header">
+                        <!-- Upper Part -->
+                        <div class="header_upper container py-2 d-flex justify-content-end align-items-center">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="phone_number d-flex align-items-center gap-2">
+                                    <i class="icon-phone1 rounded-circle bg-info text-white p-2 fs-3"></i>
+                                    <div class="d-flex flex-column">
+                                        <a href="tel:+998 71 207 00 33" class="fs-5 fw-semibold lh-sm text-black">+998
+                                            71 207 00 33</a>
+                                        <span class="fs-6 text-secondary">24/7 Qanday yordam kerak?</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button
+                                        class="btn border border-light-subtle dropdown-toggle d-flex align-items-center gap-2"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./assets/images/uz-flag.svg" alt="language" />
+                                        UZ
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                                <img src="./assets/images/uz-flag.svg" alt="language" />
+                                                UZ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                                <img src="./assets/images/ru-flag.svg" alt="language" />
+                                                RU
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                                <img src="./assets/images/en-flag.svg" alt="language" />
+                                                EN
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle d-flex align-items-center gap-2 border"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/images/avatar.png" alt="avatar">
+                                        <div class="d-flex flex-column">
+                                            <b>Olivia Silver</b>
+                                            <small class="text-muted">Foydalanuvchi</small>
+                                        </div>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Chiqish</a></li>
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Lower Part -->
+                        <div class="right_header__lower px-4 py-3">
+                            <h3 class="text-white mb-1">Boshqaruv paneli</h3>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#"><i
+                                                class="icon-home-line"></i></a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Yo'nalishlar</a></li>
+                                    <li class="breadcrumb-item active text-white" aria-current="page">Kommunal soha</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </header>
+                    <div class="right_sidebar__body py-4 px-5">
+                        <div class="row">
+                            <div class="col-6 border rounded-4 shadow-sm p-4">
+                                <h4 class="mb-2 fw-semibold">Rekvizitlarim</h4>
+                                <small class="text-muted">Kompaniya nomi</small>
+                                <p>“FAZLIDDDIONOVA AZMIA SAMANDAR QIZI” MCHJ</p>
+                                <!-- row 1 -->
+                                <div class="d-flex my-3 align-items-center justify-content-between">
+                                    <p class="d-flex flex-column">
+                                        <small class="text-muted">INN</small>
+                                        <span class="fs-5">243242342344</span>
+                                    </p>
+                                    <p class="d-flex flex-column">
+                                        <small class="text-muted">Viloyat</small>
+                                        <span class="fs-5">Farg'ona viloyati</span>
+                                    </p>
+                                </div>
+                                <!-- row 2 -->
+                                <div class="d-flex my-3 align-items-center justify-content-between">
+                                    <p class="d-flex flex-column">
+                                        <small class="text-muted">Akkredidatsiya sanasi</small>
+                                        <span class="fs-5">10.10.2024 12:44</span>
+                                    </p>
+                                    <p class="d-flex flex-column">
+                                        <small class="text-muted">Tuman</small>
+                                        <span class="fs-5">Farg'ona shahar</span>
+                                    </p>
+                                </div>
+                                <!-- row 3 -->
+                                <div class="d-flex my-3 align-items-center justify-content-between">
+                                    <p class="d-flex flex-column">
+                                        <small class="text-muted">Login</small>
+                                        <span class="fs-5">AA1254712</span>
+                                    </p>
+                                    <p class="d-flex flex-column">
+                                        <small class="text-muted">Telefon raqam</small>
+                                        <span class="fs-5">+99894 498 65 12</span>
+                                    </p>
+                                </div>
+                                <!-- row 4 -->
+                                <div class="d-flex my-3 align-items-center justify-content-between">
+                                    <p class="d-flex flex-column">
+                                        <small class="text-muted">Email</small>
+                                        <span class="fs-5">azimovsamandar97&commat;gmail.com</span>
+                                    </p>
+                                    <p class="d-flex flex-column">
+                                        <small class="text-muted">Index</small>
+                                        <span class="fs-5">100105</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="right_sidebar__footer"></footer>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- BOOTSTRAP BUNDLE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"
+        defer></script>
+
+    <!-- HIGHCHART.JS -->
+    <script src="https://code.highcharts.com/highcharts.js" defer></script>
+    <script src="https://code.highcharts.com/modules/exporting.js" defer></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js" defer></script>
+
+    <!-- HIGHMAPS.JS -->
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
+    <!-- MAIN.JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

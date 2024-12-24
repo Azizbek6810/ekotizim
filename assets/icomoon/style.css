@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9xv1gh');
-  src:  url('fonts/icomoon.eot?9xv1gh#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9xv1gh') format('truetype'),
-    url('fonts/icomoon.woff?9xv1gh') format('woff'),
-    url('fonts/icomoon.svg?9xv1gh#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?pqfcsl');
+  src:  url('fonts/icomoon.eot?pqfcsl#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pqfcsl') format('truetype'),
+    url('fonts/icomoon.woff?pqfcsl') format('woff'),
+    url('fonts/icomoon.svg?pqfcsl#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,11 +25,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone1:before {
+  content: "\e939";
+}
+.icon-copy:before {
+  content: "\e920";
+}
+.icon-hand-shake:before {
+  content: "\e932";
+}
+.icon-legal-document:before {
+  content: "\e933";
+}
+.icon-inbox:before {
+  content: "\e934";
+}
+.icon-dropbox:before {
+  content: "\e935";
+}
+.icon-calendar-plus:before {
+  content: "\e936";
+}
+.icon-setting:before {
+  content: "\e937";
+}
+.icon-dashboard-square:before {
+  content: "\e938";
+}
 .icon-legal:before {
   content: "\e91f";
-}
-.icon-phone:before {
-  content: "\e917";
 }
 .icon-location:before {
   content: "\e919";
