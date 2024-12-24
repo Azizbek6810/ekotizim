@@ -38,7 +38,7 @@
                                         class="nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white">
                                         <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
                                             <i class="icon-home-line"></i>
-                                            <small class="d-none d-sm-inline"> Asosiy </small>
+                                            <small class="d-none d-sm-inline fs-5"> Asosiy </small>
                                         </span>
                                     </a>
                                 </li>
@@ -48,7 +48,7 @@
                                         data-bs-toggle="collapse">
                                         <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
                                             <i class="icon-dashboard-square"></i>
-                                            <small class="d-none d-sm-inline">
+                                            <small class="d-none d-sm-inline fs-5">
                                                 Boshqaruv paneli
                                             </small>
                                         </span>
@@ -59,7 +59,7 @@
                                         class="nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white">
                                         <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
                                             <i class="icon-setting"></i>
-                                            <small class="d-none d-sm-inline"> Sozlamalar </small>
+                                            <small class="d-none d-sm-inline fs-5"> Sozlamalar </small>
                                         </span>
                                     </a>
                                 </li>
@@ -69,19 +69,40 @@
                                         data-bs-toggle="collapse">
                                         <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
                                             <i class="icon-calendar-plus"></i>
-                                            <small class="d-none d-sm-inline"> Joylashtirish </small>
+                                            <small class="d-none d-sm-inline fs-5"> Joylashtirish </small>
                                         </span>
                                     </a>
                                 </li>
-                                <li class="nav-item w-100">
-                                    <a href="#malumotlar"
-                                        class="nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white"
-                                        data-bs-toggle="collapse">
+                                <li class="nav-item w-100 submenu">
+                                    <a href="#"
+                                        class="submenu-toggle nav-link p-0 d-flex justify-content-between align-items-center w-100 text-white">
                                         <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
                                             <i class="icon-dropbox"></i>
-                                            <small class="d-none d-sm-inline"> Mening tovarlarim </small>
+                                            <small class="d-none d-sm-inline fs-5"> Mening tovarlarim </small>
                                         </span>
+                                        <i class="icon-chevron-down1"></i>
                                     </a>
+                                    <ul class="submenu-items">
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-dropbox"></i>
+                                                <small class="d-none d-sm-inline fs-6"> Mening tovarlarim </small>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-dropbox"></i>
+                                                <small class="d-none d-sm-inline fs-6"> Mening tovarlarim </small>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-dropbox"></i>
+                                                <small class="d-none d-sm-inline fs-6"> Mening tovarlarim </small>
+                                            </a>
+                                        </li>
+
+                                    </ul>
                                 </li>
                                 <li class="nav-item w-100">
                                     <a href="#malumotlar"
@@ -89,7 +110,7 @@
                                         data-bs-toggle="collapse">
                                         <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
                                             <i class="icon-inbox"></i>
-                                            <small class="d-none d-sm-inline"> Mening lotlarim</small>
+                                            <small class="d-none d-sm-inline fs-5"> Mening lotlarim</small>
                                         </span>
                                     </a>
                                 </li>
@@ -99,7 +120,7 @@
                                         data-bs-toggle="collapse">
                                         <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
                                             <i class="icon-legal-document"></i>
-                                            <small class="d-none d-sm-inline"> Qabul qilingan takliflar</small>
+                                            <small class="d-none d-sm-inline fs-5"> Qabul qilingan takliflar</small>
                                         </span>
                                     </a>
                                 </li>
@@ -109,7 +130,7 @@
                                         data-bs-toggle="collapse">
                                         <span class="sidebar_link__wrapper fw-semibold d-flex align-items-center gap-2">
                                             <i class="icon-hand-shake"></i>
-                                            <small class="d-none d-sm-inline"> Mening bitimlarim</small>
+                                            <small class="d-none d-sm-inline fs-5"> Mening bitimlarim</small>
                                         </span>
                                     </a>
                                 </li>
@@ -191,7 +212,7 @@
                         </div>
                     </header>
                     <div class="right_sidebar__body py-4 px-5">
-                        <div class="d-flex gap-4">
+                        <div class="d-flex gap-4 mb-4">
                             <div class="col-lg-6 border rounded-4 shadow-sm p-4">
                                 <h4 class="mb-2 fw-semibold">Rekvizitlarim</h4>
                                 <small class="text-muted">Kompaniya nomi</small>
@@ -258,26 +279,31 @@
                                     </select>
                                 </div>
                                 <div
-                                    class="border p-4 rounded-4 d-flex justify-content-between align-items-center my-3">
+                                    class="border px-4 py-3 rounded-4 d-flex justify-content-between align-items-center my-3">
                                     <span class="fs-6 text-muted fw-semibold">Erkin mablag'</span>
                                     <span class="text-success fs-4 fw-semibold">
                                         229 mln. so'm
                                     </span>
                                 </div>
                                 <div
-                                    class="border p-4 rounded-4 d-flex justify-content-between align-items-center my-3">
+                                    class="border px-4 py-3 rounded-4 d-flex justify-content-between align-items-center my-3">
                                     <span class="fs-6 text-muted fw-semibold">Bugungi tushumlar</span>
                                     <span class="text-primary fs-4 fw-semibold">
                                         100 mln. so'm
                                     </span>
                                 </div>
                                 <div
-                                    class="border p-4 rounded-4 d-flex justify-content-between align-items-center my-3">
+                                    class="border px-4 py-3 rounded-4 d-flex justify-content-between align-items-center my-3">
                                     <span class="fs-6 text-muted fw-semibold">Bloklangan mablag'lar</span>
                                     <span class="text-danger fs-4 fw-semibold">
-                                      129 mln. so'm
+                                        129 mln. so'm
                                     </span>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-lg-6 border rounded-4 shadow-sm p-4">
+                                <h4 class="mb-2 fw-semibold">Statistika</h4>
                             </div>
                         </div>
                     </div>

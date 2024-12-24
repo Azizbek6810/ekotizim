@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const submenuToggles = document.querySelectorAll(".submenu-toggle");
+
+  submenuToggles.forEach((toggle) => {
+    toggle.addEventListener("click", (e) => {
+      e.preventDefault(); // Prevent default link behavior
+
+      // Get the parent `.submenu` element
+      const submenu = toggle.parentElement;
+
+      // Toggle the active class
+      submenu.classList.toggle("active");
+    });
+  });
+
   // highchart
   Highcharts.chart("highcharts_container", {
     chart: {
