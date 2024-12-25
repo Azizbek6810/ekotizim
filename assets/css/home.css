@@ -22,8 +22,53 @@
     background-color: var(--blue-400);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+.image-overlay-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-overlay-container img {
+    transition: transform 0.3s ease;
+    max-width: 177px;
+    max-height: 177px;
+}
+
+.image-overlay-container:hover img {
+    transform: scale(1.1);
+}
+
+.image-overlay-container .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.image-overlay-container:hover .overlay  {
+    opacity: 1;
+}
+.image-overlay-container .overlay span {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
 /* So'ngi maxsulotlar section styles */
 
 #latest-products .icon-star {
@@ -32,7 +77,6 @@
     cursor: pointer;
 }
 
-.product-img img{
+.product-img img {
     max-width: 250px;
-  }
-
+}

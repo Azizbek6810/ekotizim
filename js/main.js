@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const sidebar = document.querySelector(".left_sidebar");
 
   if (sidebar) {
-    console.log(sidebar);
     const navLinks = sidebar.querySelectorAll(".nav-link");
 
     navLinks.forEach((link) => {
