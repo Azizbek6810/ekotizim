@@ -13,6 +13,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  const sidebar = document.querySelector(".left_sidebar");
+
+  if (sidebar) {
+    console.log(sidebar);
+    const navLinks = sidebar.querySelectorAll(".nav-link");
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        // Barcha linklardan active klassini o'chirish
+        navLinks.forEach((item) => item.classList.remove("active"));
+
+        // Faqat tanlangan linkka active klassini qo'shish
+        this.classList.add("active");
+      });
+    });
+  }
+
   // highchart
   Highcharts.chart("highcharts_container", {
     chart: {

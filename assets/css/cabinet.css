@@ -2,13 +2,6 @@
     background-color: #101323;
 }
 
-.right_sidebar__body .nav-pills .nav-link.active {
-    background-color: transparent;
-    border: 2px solid var(--blurLight-color);
-    color: var(--color-gray-600);
-    background: var(--white);
-}
-
 .sidebar_link__wrapper {
     padding: 12px;
     border-radius: 6px;
@@ -16,7 +9,9 @@
     width: 100%;
 }
 
-.sidebar_link__wrapper:hover {
+.left_sidebar .nav-link:hover,
+.left_sidebar .nav-link.active,
+.submenu.active .submenu-toggle {
     background-color: #1d2939;
 }
 
@@ -51,6 +46,6 @@
 }
 
 /* Active submenu */
-.submenu.active .submenu-items{
+.submenu.active .submenu-items {
     display: block;
 }
