@@ -21,71 +21,86 @@
     <!-- Header Section -->
     <header id="header">
         <!-- Upper Part -->
-        <div class="header_upper container py-2 d-flex justify-content-between align-items-center">
-            <a class="logo" href="index.html">
-                <img src="./assets/images/logo.svg" alt="logo" />
-            </a>
-            <div class="d-flex align-items-center gap-3">
-                <div class="phone_number d-flex align-items-center gap-2">
-                    <i class="icon-phone1 rounded-circle bg-info text-white p-2 fs-3"></i>
-                    <div class="d-flex flex-column">
-                        <a href="tel:+998 71 207 00 33" class="fs-5 fw-semibold lh-sm text-black">+998 71 207 00 33</a>
-                        <span class="fs-6 text-secondary">24/7 Qanday yordam kerak?</span>
+        <div class="header_upper">
+            <div class="container py-2 d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a class="logo" href="index.html">
+                    <img src="./assets/images/logo.svg" alt="logo" />
+                </a>
+                <!-- Phone, Dropdown and Buttons-->
+                <div class="phone_dropdown_buttons">
+                    <!-- Phone -->
+                    <div class="phone_number d-flex align-items-center gap-2">
+                        <i class="icon-phone1 rounded-circle bg-info text-white p-2 fs-3"></i>
+                        <div class="d-flex flex-column">
+                            <a href="tel:+998 71 207 00 33" class="fs-5 fw-semibold lh-sm text-black">+998 71 207 00
+                                33</a>
+                            <span class="fs-6 text-secondary">24/7 Qanday yordam kerak?</span>
+                        </div>
+                    </div>
+                    <!-- Language Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn border border-light-subtle dropdown-toggle d-flex align-items-center gap-2"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/uz-flag.svg" alt="language" />
+                            UZ
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    <img src="./assets/images/uz-flag.svg" alt="language" />
+                                    UZ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    <img src="./assets/images/ru-flag.svg" alt="language" />
+                                    RU
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    <img src="./assets/images/en-flag.svg" alt="language" />
+                                    EN
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Register and Login buttons -->
+                    <div class="buttons d-flex gap-2">
+                        <button class="btn btn-outline-success">
+                            <i class="icon-user"></i>
+                            Ro'yxatdan o'tish
+                        </button>
+                        <button class="btn btn-primary d-flex gap-2 align-items-center">
+                            <i class="icon-login"></i>
+                            <span>Kirish</span>
+                        </button>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="btn border border-light-subtle dropdown-toggle d-flex align-items-center gap-2"
-                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="./assets/images/uz-flag.svg" alt="language" />
-                        UZ
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                <img src="./assets/images/uz-flag.svg" alt="language" />
-                                UZ
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                <img src="./assets/images/ru-flag.svg" alt="language" />
-                                RU
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                <img src="./assets/images/en-flag.svg" alt="language" />
-                                EN
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="btn btn-outline-success">Ro'yxatdan o'tish</button>
-                <button class="btn btn-primary">
-                    <i class="icon-user"></i>
-                    <span>Kirish</span>
-                </button>
+                <!-- hamburger icon -->
+                <i id="icon-menu" class="icon-menu" aria-expanded="false"></i>
             </div>
         </div>
         <!-- Lower Part -->
         <nav class="header_lower">
             <div class="container">
-                <ul class="nav gap-4">
+                <ul class="nav">
                     <li class="nav-item">
-                        <a href="#" class="active nav-link py-3 px-4 fs-5 fw-medium lh-sm custom-transition">KIRISH</a>
+                        <a href="#" class="active nav-link fw-medium custom-transition">KIRISH</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link py-3 px-4 fs-5 fw-medium lh-sm custom-transition">SAVDOLAR</a>
+                        <a href="#" class="nav-link fw-medium custom-transition">SAVDOLAR</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link py-3 px-4 fs-5 fw-medium lh-sm custom-transition">TOVAR</a>
+                        <a href="#" class="nav-link fw-medium custom-transition">TOVAR</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link py-3 px-4 fs-5 fw-medium lh-sm custom-transition">TIZIMDAGI
+                        <a href="#" class="nav-link fw-medium custom-transition">TIZIMDAGI
                             YANGILIKLAR</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link py-3 px-4 fs-5 fw-medium lh-sm custom-transition">BOG'LANISH
+                        <a href="#" class="nav-link fw-medium custom-transition">BOG'LANISH
                             UCHUN</a>
                     </li>
                 </ul>
@@ -113,62 +128,62 @@
                 <div class="carousel-inner rounded-4">
                     <!-- Item 1 -->
                     <div class="carousel-item active bg-blue-900 text-white rounded-4">
-                        <div class="d-flex justify-content-between align-items-center mx-auto w-75">
-                            <div class="carousel-text w-50">
-                                <h2 class="fs-2 fw-semibold">
+                        <div class="carousel_item__wrapper">
+                            <div class="carousel-text">
+                                <h2 class="fw-semibold">
                                     Ekotizim.uzex.uz tadbirkorlar va buyurtmachilar o'rtasida
                                     ishonchli hamkor
                                 </h2>
                             </div>
-                            <img src="./assets/images/bag.png" class="img-fluid carousel-image" alt="Slide 1 Image" />
+                            <img src="./assets/images/plastic1.png" class="carousel-image" alt="Slide 1 Image" />
                         </div>
                     </div>
 
                     <!-- Item 2 -->
                     <div class="carousel-item bg-blue-900 text-white rounded-4">
-                        <div class="d-flex justify-content-between align-items-center mx-auto w-75">
-                            <div class="carousel-text w-50">
-                                <h2 class="fs-2 fw-semibold">
+                        <div class="carousel_item__wrapper">
+                            <div class="carousel-text">
+                                <h2 class="fw-semibold">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                     Blanditiis nisi repudiandae saepe quidem dolorum porro?
                                 </h2>
                             </div>
-                            <img src="./assets/images/bag.png" class="img-fluid carousel-image" alt="Slide 2 Image" />
+                            <img src="./assets/images/bag.png" class="carousel-image" alt="Slide 2 Image" />
                         </div>
                     </div>
 
                     <!-- Item 3 -->
                     <div class="carousel-item bg-blue-900 text-white rounded-4">
-                        <div class="d-flex justify-content-between align-items-center mx-auto w-75">
-                            <div class="carousel-text w-50">
-                                <h2 class="fs-2 fw-semibold">Welcome to Our Website</h2>
+                        <div class="carousel_item__wrapper">
+                            <div class="carousel-text">
+                                <h2 class="fw-semibold">Welcome to Our Website</h2>
                             </div>
-                            <img src="./assets/images/bag.png" class="img-fluid carousel-image" alt="Slide 3 Image" />
+                            <img src="./assets/images/bag.png" class="carousel-image" alt="Slide 3 Image" />
                         </div>
                     </div>
 
                     <!-- Item 4 -->
                     <div class="carousel-item bg-blue-900 text-white rounded-4">
-                        <div class="d-flex justify-content-between align-items-center mx-auto w-75">
-                            <div class="carousel-text w-50">
-                                <h2 class="fs-2 fw-semibold">
+                        <div class="carousel_item__wrapper">
+                            <div class="carousel-text">
+                                <h2 class="fw-semibold">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Maxime, explicabo.
                                 </h2>
                             </div>
-                            <img src="./assets/images/bag.png" class="img-fluid carousel-image" alt="Slide 3 Image" />
+                            <img src="./assets/images/plastic1.png" class="carousel-image" alt="Slide 3 Image" />
                         </div>
                     </div>
 
                     <!-- Item 5 -->
                     <div class="carousel-item bg-blue-900 text-white rounded-4">
-                        <div class="d-flex justify-content-between align-items-center mx-auto w-75">
-                            <div class="carousel-text w-50">
-                                <h2 class="fs-2 fw-semibold">
+                        <div class="carousel_item__wrapper">
+                            <div class="carousel-text">
+                                <h2 class="fw-semibold">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit
                                 </h2>
                             </div>
-                            <img src="./assets/images/bag.png" class="img-fluid carousel-image" alt="Slide 3 Image" />
+                            <img src="./assets/images/bag.png" class="carousel-image" alt="Slide 3 Image" />
                         </div>
                     </div>
                 </div>
@@ -272,7 +287,7 @@
                         <!-- category footer -->
                         <div class="category-footer p-2">
                             <div class="row g-2 text-center">
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/paper1.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -280,7 +295,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/paper2.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -288,7 +303,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/paper3.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -296,7 +311,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/paper4.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -337,7 +352,7 @@
                         <!-- category footer -->
                         <div class="category-footer p-2">
                             <div class="row g-2 text-center">
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/clay1.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -345,7 +360,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/clay2.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -353,7 +368,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/clay3.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -361,7 +376,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/clay4.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -404,7 +419,7 @@
                         <!-- category footer -->
                         <div class="category-footer p-2">
                             <div class="row g-2 text-center">
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/wood1.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -412,7 +427,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/wood2.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -420,7 +435,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/wood3.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -428,7 +443,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/wood4.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -469,7 +484,7 @@
                         <!-- category footer -->
                         <div class="category-footer p-2">
                             <div class="row g-2 text-center">
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/other-product1.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -478,7 +493,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/other-product2.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -487,7 +502,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/other-product3.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -496,7 +511,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/other-product4.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -540,7 +555,7 @@
                         <!-- category footer -->
                         <div class="category-footer p-2">
                             <div class="row g-2 text-center">
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/iron1.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -548,7 +563,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/iron2.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -556,7 +571,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/iron3.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -564,7 +579,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/iron4.png" alt="Image 1" class="img-fluid rounded" />
                                         <div class="overlay">
@@ -607,7 +622,7 @@
                         <!-- category footer -->
                         <div class="category-footer p-2">
                             <div class="row g-2 text-center">
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/plastic1.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -616,7 +631,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/plastic2.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -625,7 +640,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/plastic3.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -634,7 +649,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/plastic4.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -678,7 +693,7 @@
                         <!-- category footer -->
                         <div class="category-footer p-2">
                             <div class="row g-2 text-center">
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/equipment1.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -687,7 +702,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/equipment2.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -696,7 +711,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/equipment3.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -705,7 +720,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/equipment4.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -749,25 +764,25 @@
                         <!-- category footer -->
                         <div class="category-footer p-2">
                             <div class="row g-2 text-center">
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/electronic1.png" alt="Image 1"
-                                            class="img-fluid rounded" />
-                                        <div class="overlay">
-                                            <span>Моноблок</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 pr-0">
-                                    <div class="image-overlay-container">
-                                        <img src="./assets/images/electronic2.png" alt="Image 1"
                                             class="img-fluid rounded" />
                                         <div class="overlay">
                                             <span>Интерактивная доска</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
+                                    <div class="image-overlay-container">
+                                        <img src="./assets/images/electronic2.png" alt="Image 1"
+                                            class="img-fluid rounded" />
+                                        <div class="overlay">
+                                            <span>Моноблок</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/electronic3.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -776,7 +791,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/electronic4.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -818,7 +833,7 @@
                         <!-- category footer -->
                         <div class="category-footer p-2">
                             <div class="row g-2 text-center">
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/clothe1.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -827,7 +842,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/clothe2.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -836,7 +851,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/clothe3.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -845,7 +860,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 pr-0">
+                                <div class="col-lg-6 mb-1">
                                     <div class="image-overlay-container">
                                         <img src="./assets/images/clothe4.png" alt="Image 1"
                                             class="img-fluid rounded" />
@@ -983,9 +998,9 @@
                     <div class="col-md-6 col-lg-3">
                         <div
                             class="hover-shadow p-3 border rounded-4 bg-body custom-transition d-flex flex-column align-items-start gap-3">
-                            <i class="icon-agriculture fs-4 p-3 rounded-3 bg-indigo text-white"></i>
+                            <i class="icon-file-new fs-4 p-3 rounded-3 bg-indigo text-white"></i>
+                            <small class="text-muted fs-6 fw-normal"> Qog'oz va qog'oz mahsulotlari</small>
                             <h5 class="text-blue-900 fw-semibold fs-4">86 mlrd so'm</h5>
-                            <small class="text-muted fs-6 fw-normal">Qishloq xo'jaligi</small>
                         </div>
                     </div>
 
@@ -993,9 +1008,9 @@
                     <div class="col-md-6 col-lg-3">
                         <div
                             class="hover-shadow p-3 border rounded-4 bg-body custom-transition d-flex flex-column align-items-start gap-3">
-                            <i class="icon-master-cap fs-4 p-3 rounded-3 bg-orange text-white"></i>
+                            <i class="icon-chemistry fs-4 p-3 rounded-3 bg-orange text-white"></i>
+                            <small class="text-muted fs-6 fw-normal">Kimyoviy mahsulotlar</small>
                             <h5 class="text-blue-900 fw-semibold fs-4">56.1 mlrd so'm</h5>
-                            <small class="text-muted fs-6 fw-normal">Ijtimoiy soha</small>
                         </div>
                     </div>
 
@@ -1003,9 +1018,9 @@
                     <div class="col-md-6 col-lg-3">
                         <div
                             class="hover-shadow p-3 border rounded-4 bg-body custom-transition d-flex flex-column align-items-start gap-3">
-                            <i class="icon-code-computer fs-4 p-3 rounded-3 bg-blue-light text-white"></i>
+                            <i class="icon-wood fs-4 p-3 rounded-3 bg-blue-light text-white"></i>
+                            <small class="text-muted fs-6 fw-normal">Yog'och va yog'och maxsulotlar</small>
                             <h5 class="text-blue-900 fw-semibold fs-4">41.6 mlrd so'm</h5>
-                            <small class="text-muted fs-6 fw-normal">Texnologiya va elektronika</small>
                         </div>
                     </div>
 
@@ -1013,9 +1028,9 @@
                     <div class="col-md-6 col-lg-3">
                         <div
                             class="hover-shadow p-3 border rounded-4 bg-body custom-transition d-flex flex-column align-items-start gap-3">
-                            <i class="icon-city fs-4 p-3 rounded-3 bg-success-500 text-white"></i>
-                            <h5 class="text-blue-900 fw-semibold fs-4">39.8 mlrd so'm</h5>
+                            <i class="icon-folder fs-4 p-3 rounded-3 bg-success-500 text-white"></i>
                             <small class="text-muted fs-6 fw-normal">Qurilish va inshoatlar</small>
+                            <h5 class="text-blue-900 fw-semibold fs-4">39.8 mlrd so'm</h5>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const submenuToggles = document.querySelectorAll(".submenu-toggle");
+  const sidebar = document.querySelector(".left_sidebar");
+  const menuIcon = document.querySelector("#icon-menu");
+  const headerLower = document.querySelector(".header_lower");
 
+  // submenu toggle function
   submenuToggles.forEach((toggle) => {
     toggle.addEventListener("click", (e) => {
       e.preventDefault(); // Prevent default link behavior
@@ -13,8 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const sidebar = document.querySelector(".left_sidebar");
-
+  // sidebar nav-link toggle active class
   if (sidebar) {
     const navLinks = sidebar.querySelectorAll(".nav-link");
 
@@ -28,6 +31,25 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+
+  // nav menu toggle
+  menuIcon.addEventListener("click", () => {
+    const isExpanded = menuIcon.getAttribute("aria-expanded") === "true";
+
+    if (isExpanded) {
+      // Menu yopiladi
+      menuIcon.classList.remove("icon-x-close", "active");
+      menuIcon.classList.add("icon-menu");
+      headerLower.classList.remove("show");
+    } else {
+      // Menu ochiladi
+      menuIcon.classList.remove("icon-menu");
+      menuIcon.classList.add("icon-x-close", "active");
+      headerLower.classList.add("show");
+    }
+
+    menuIcon.setAttribute("aria-expanded", !isExpanded); // Accessibility uchun yangilanadi
+  });
 
   // highchart
   Highcharts.chart("highcharts_container", {

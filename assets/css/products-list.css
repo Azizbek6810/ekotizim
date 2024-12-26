@@ -35,9 +35,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  border-top: 1px solid var(--gray-150);
+  border-top: 1px solid var(--gray-300);
   border-top-width: 100%;
-  padding: 24px 0;
+  padding: 24px;
 }
 
 .filter_buttons button {

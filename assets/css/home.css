@@ -16,10 +16,30 @@
     height: 12px !important;
 }
 
+.carousel_item__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    padding: 43px 0;
+    gap: 36px;
+}
+
+.carousel-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-text h2 {
+    font-size: 36px;
+}
+
 /* Sohalar kesimida davlat xaridlari section styles */
 
 .category-box h4 {
-    background-color: var(--blue-400);
+    background-color: var(--blue-900);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     min-height: 80px;
@@ -45,7 +65,7 @@
     transform: scale(1.1);
 }
 
-.image-overlay-container .overlay{
+.image-overlay-container .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -60,15 +80,17 @@
     border-radius: 10px;
 }
 
-.image-overlay-container:hover .overlay  {
+.image-overlay-container:hover .overlay {
     opacity: 1;
 }
+
 .image-overlay-container .overlay span {
     color: white;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
 }
+
 /* So'ngi maxsulotlar section styles */
 
 #latest-products .icon-star {
@@ -79,4 +101,34 @@
 
 .product-img img {
     max-width: 250px;
+}
+
+
+
+/*=========== MEDIA QUERY (Kichik ekranlar) ===========*/
+
+@media (max-width: 991.98px) {
+
+    /* Carousel section */
+    .carousel_item__wrapper {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 27px 0 60px 0;
+        gap: 20px;
+    }
+
+    .carousel-text {
+        text-align: center;
+    }
+
+    .carousel-text h2 {
+        font-size: 20px;
+    }
+
+    .carousel-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
 }
